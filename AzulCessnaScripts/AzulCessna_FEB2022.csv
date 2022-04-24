@@ -1,0 +1,412 @@
+REG,DATE,FROM,TO,FLIGHT,DURATION,SDT,ADT,ETA,STATUS
+PP-ITY,09 Feb 2022,Curitiba (CWB),Jundiai (QDV),AD5999,—,19:20,—,21:05,Scheduled
+PP-ITY,09 Feb 2022,—,Curitiba (CWB),AD5486,—,14:55,—,13:55,Scheduled
+PP-ITY,09 Feb 2022,Curitiba (CWB),—,AD5485,—,9:00,9:11,14:30,Scheduled
+PP-ITY,09 Feb 2022,Jundiai (QDV),Curitiba (CWB),AD5998,1:29,6:30,7:00,8:15,Landed 08:28
+PP-ITY,09 Feb 2022,Jundiai (QDV),—,(PPITY),—,—,—,—,Scheduled
+PP-ITY,08 Feb 2022,Jundiai (QDV),Jundiai (QDV),(PPITY),—,—,—,19:45,Landed 19:45
+PP-ITY,08 Feb 2022,Jundiai (QDV),Jundiai (QDV),(PPITY),0:37,17:31,17:31,18:08,Landed 18:08
+PP-ITY,08 Feb 2022,Jundiai (QDV),Jundiai (QDV),AD5950,0:45,12:09,12:09,12:54,Landed 12:54
+PP-ITY,07 Feb 2022,Porto Alegre (POA),Jundiai (QDV),AD5429,3:37,6:18,6:18,9:55,Landed 09:55
+PP-ITY,05 Feb 2022,Alegrete (ALQ),Porto Alegre (POA),AD5429,1:40,9:35,9:50,11:25,Landed 11:30
+PP-ITY,05 Feb 2022,Porto Alegre (POA),Alegrete (ALQ),AD5428,1:47,7:10,7:41,9:10,Landed 09:28
+PP-ITY,05 Feb 2022,Bage (BGX),Porto Alegre (POA),AD5438,1:19,5:00,5:14,6:25,Landed 06:33
+PP-ITY,04 Feb 2022,Porto Alegre (POA),Bage (BGX),AD5436,1:22,21:35,22:20,23:05,Landed 23:42
+PP-ITY,04 Feb 2022,Porto Alegre (POA),Erechim (ERM),AD5426,—,17:45,—,19:10,Canceled
+PP-ITY,04 Feb 2022,Uruguaiana (URG),Porto Alegre (POA),AD5925,2:03,10:45,10:49,12:45,Landed 12:53
+PP-ITY,04 Feb 2022,Porto Alegre (POA),Pleasanton (JBS),AD5420,2:46,7:10,7:19,4:20,Landed 05:05
+PP-ITY,04 Feb 2022,Bage (BGX),Porto Alegre (POA),AD5438,1:21,5:00,5:12,6:25,Landed 06:33
+PP-ITY,03 Feb 2022,Porto Alegre (POA),Bage (BGX),AD5437,1:22,22:25,22:26,23:55,Landed 23:48
+PP-ITY,03 Feb 2022,Santa Rosa (SRA),Porto Alegre (POA),AD5435,1:28,20:00,19:42,21:40,Landed 21:10
+PP-ITY,03 Feb 2022,Porto Alegre (POA),Santa Rosa (SRA),AD5434,1:40,17:45,17:46,19:35,Landed 19:26
+PP-ITY,03 Feb 2022,Vacaria (VCC),Porto Alegre (POA),AD5433,0:44,16:05,16:08,17:00,Landed 16:51
+PP-ITY,03 Feb 2022,Porto Alegre (POA),Vacaria (VCC),AD5432,0:44,14:40,14:52,15:40,Landed 15:36
+PP-ITY,03 Feb 2022,—,Porto Alegre (POA),AD5431,0:26,16:25,16:25,13:51,Landed 13:51
+PP-ITY,03 Feb 2022,Porto Alegre (POA),Canela (QCN),AD5430,—,12:20,12:29,12:55,Estimated departure 12:29
+PP-ITY,03 Feb 2022,Alegrete (ALQ),Porto Alegre (POA),AD5429,1:54,9:35,9:40,11:25,Landed 11:34
+PP-ITY,03 Feb 2022,Porto Alegre (POA),—,AD5438,—,7:14,7:14,—,Unknown
+PP-ITY,03 Feb 2022,Porto Alegre (POA),Alegrete (ALQ),AD5428,—,7:10,7:14,9:10,Estimated departure 07:14
+PP-ITY,03 Feb 2022,Bage (BGX),Porto Alegre (POA),AD5438,1:10,5:00,4:49,6:25,Landed 05:59
+PP-ITY,02 Feb 2022,Porto Alegre (POA),Bage (BGX),AD5436,1:23,21:35,21:37,23:05,Landed 23:00
+PP-ITY,02 Feb 2022,Erechim (ERM),Porto Alegre (POA),AD5427,1:06,19:35,19:35,20:50,Landed 20:41
+PP-ITY,02 Feb 2022,Porto Alegre (POA),Erechim (ERM),AD5426,1:17,17:45,17:55,19:10,Landed 19:12
+PP-ITY,02 Feb 2022,Santa Cruz Do Sul (CSU),Porto Alegre (POA),AD5425,1:06,16:15,15:51,17:00,Landed 16:56
+PP-ITY,02 Feb 2022,Porto Alegre (POA),Porto Alegre (POA),AD5421,0:38,15:09,15:10,15:48,Landed 15:48
+PP-ITY,02 Feb 2022,Porto Alegre (POA),Santa Cruz Do Sul (CSU),AD5424,—,15:05,15:10,15:50,Estimated departure 15:10
+PP-ITY,02 Feb 2022,Porto Alegre (POA),Canela (QCN),AD5422,—,12:30,12:42,13:07,Estimated departure 12:42
+PP-ITY,02 Feb 2022,Porto Alegre (POA),Porto Alegre (POA),AD5421,1:30,9:45,12:42,14:12,Landed 14:12
+PP-ITY,02 Feb 2022,Pleasanton (JBS),Porto Alegre (POA),AD5421,—,4:37,4:37,11:19,Unknown
+PR-MAU,11 Feb 2022,Breves (BVS),Belem (BEL),AD5582,—,8:35,—,9:40,Scheduled
+PR-MAU,11 Feb 2022,Belem (BEL),Breves (BVS),AD5581,—,7:00,—,8:00,Scheduled
+PR-MAU,10 Feb 2022,Tucurui (TUR),Belem (BEL),AD5330,—,14:50,—,16:15,Scheduled
+PR-MAU,10 Feb 2022,Belem (BEL),Tucurui (TUR),AD5329,—,12:45,—,14:15,Scheduled
+PR-MAU,10 Feb 2022,Breves (BVS),Belem (BEL),AD5324,—,7:25,—,8:30,Scheduled
+PR-MAU,10 Feb 2022,Belem (BEL),Breves (BVS),AD5323,—,6:00,—,7:00,Scheduled
+PR-MAU,09 Feb 2022,Santarem (STM),Belem (BEL),AD5468,—,21:15,—,0:05,Scheduled
+PR-MAU,09 Feb 2022,Manaus (MAO),Santarem (STM),AD5901,—,17:30,—,20:30,Scheduled
+PR-MAU,09 Feb 2022,Maués (MBZ),Manaus (MAO),AD5585,—,15:35,—,16:45,Scheduled
+PR-MAU,09 Feb 2022,Manaus (MAO),Maués (MBZ),AD5584,—,13:55,—,15:10,Scheduled
+PR-MAU,09 Feb 2022,Coari (CIZ),Manaus (MAO),AD5540,—,11:30,—,13:05,Scheduled
+PR-MAU,09 Feb 2022,Lábrea (LBR),Coari (CIZ),AD5540,—,9:10,—,10:45,Unknown
+PR-MAU,09 Feb 2022,Manaus (MAO),Lábrea (LBR),AD5540,—,6:00,6:29,8:40,Unknown
+PR-MAU,08 Feb 2022,Coari (CIZ),Manaus (MAO),AD5320,1:25,16:40,17:25,18:15,Landed 18:50
+PR-MAU,08 Feb 2022,Manaus (MAO),Coari (CIZ),AD5319,1:13,14:45,15:25,16:15,Landed 16:39
+PR-MAU,08 Feb 2022,Maués (MBZ),Manaus (MAO),AD5318,1:06,12:40,13:44,13:50,Landed 14:49
+PR-MAU,08 Feb 2022,Manaus (MAO),Maués (MBZ),AD5317,1:02,11:00,11:54,12:15,Landed 12:56
+PR-MAU,08 Feb 2022,Coari (CIZ),Manaus (MAO),AD5312,1:30,8:25,9:18,10:00,Landed 10:47
+PR-MAU,08 Feb 2022,Manaus (MAO),Coari (CIZ),AD5311,1:21,6:30,7:28,8:00,Landed 08:50
+PR-MAU,07 Feb 2022,Maués (MBZ),Manaus (MAO),AD5585,1:01,15:35,15:40,16:45,Landed 16:40
+PR-MAU,07 Feb 2022,Manaus (MAO),Maués (MBZ),AD5584,1:05,13:55,13:58,15:10,Landed 15:03
+PR-MAU,07 Feb 2022,Coari (CIZ),Manaus (MAO),AD5540,1:27,11:30,11:25,13:05,Landed 12:52
+PR-MAU,07 Feb 2022,Lábrea (LBR),Coari (CIZ),AD5540,—,9:10,9:20,10:45,Estimated departure 09:20
+PR-MAU,07 Feb 2022,Manaus (MAO),Lábrea (LBR),AD5540,1:52,6:00,6:04,8:40,Landed 07:56
+PR-MAU,04 Feb 2022,Maués (MBZ),Manaus (MAO),AD5585,0:56,15:35,15:46,16:45,Landed 16:42
+PR-MAU,04 Feb 2022,Manaus (MAO),Maués (MBZ),AD5584,0:59,13:55,14:07,15:10,Landed 15:06
+PR-MAU,04 Feb 2022,Coari (CIZ),Manaus (MAO),AD5540,1:27,11:30,11:29,13:05,Landed 12:55
+PR-MAU,04 Feb 2022,Manaus (MAO),Lábrea (LBR),AD5540,1:53,6:00,6:20,8:40,Landed 08:13
+PR-MAU,03 Feb 2022,Manaus (MAO),Coari (CIZ),AD5319,—,14:45,16:25,16:15,Canceled
+PR-MAU,03 Feb 2022,Maués (MBZ),Manaus (MAO),AD5318,1:05,12:40,15:20,13:50,Landed 16:24
+PR-MAU,03 Feb 2022,Manaus (MAO),Maués (MBZ),AD5317,0:59,11:00,13:43,12:15,Landed 14:41
+PR-MAU,03 Feb 2022,Coari (CIZ),Manaus (MAO),AD5312,1:16,8:25,11:33,10:00,Landed 12:49
+PR-MAU,03 Feb 2022,Manaus (MAO),Coari (CIZ),AD5311,1:19,6:30,9:37,8:00,Landed 10:56
+PR-MAU,02 Feb 2022,Maués (MBZ),Manaus (MAO),AD5585,1:11,15:35,17:17,16:45,Landed 18:28
+PR-MAU,02 Feb 2022,Manaus (MAO),Maués (MBZ),AD5584,1:07,13:55,15:26,15:10,Landed 16:33
+PR-MAU,02 Feb 2022,Coari (CIZ),Manaus (MAO),AD5540,1:24,11:30,12:06,13:05,Landed 13:30
+PR-WOT,09 Feb 2022,Francisco Beltrao (FBE),Curitiba (CWB),AD5488,—,17:00,—,18:35,Scheduled
+PR-WOT,09 Feb 2022,Curitiba (CWB),Francisco Beltrao (FBE),AD5487,—,14:40,—,16:35,Scheduled
+PR-WOT,09 Feb 2022,Telêmaco Borba (TEC),Curitiba (CWB),AD5473,—,12:55,—,14:00,Scheduled
+PR-WOT,09 Feb 2022,Curitiba (CWB),Telêmaco Borba (TEC),AD5472,—,11:20,11:17,12:30,Estimated 12:15
+PR-WOT,09 Feb 2022,—,—,—,—,—,—,—,Scheduled
+PR-WOT,09 Feb 2022,Cianorte (GGH),Curitiba (CWB),AD5471,—,8:55,—,10:35,Unknown
+PR-WOT,09 Feb 2022,Curitiba (CWB),Cianorte (GGH),AD5470,—,6:30,6:34,8:30,Estimated departure 06:34
+PR-WOT,08 Feb 2022,Umuarama (UMU),Curitiba (CWB),AD5481,—,20:05,20:00,21:55,Estimated departure 20:00
+PR-WOT,08 Feb 2022,—,—,—,—,—,—,—,Scheduled
+PR-WOT,08 Feb 2022,Curitiba (CWB),Umuarama (UMU),AD5480,—,17:15,17:14,19:10,Unknown
+PR-WOT,08 Feb 2022,—,Curitiba (CWB),AD5494,—,18:20,18:11,16:20,Estimated departure 18:11
+PR-WOT,08 Feb 2022,—,—,—,—,—,—,—,Scheduled
+PR-WOT,08 Feb 2022,Curitiba (CWB),—,AD5493,—,13:45,13:38,17:55,Unknown
+PR-WOT,08 Feb 2022,Cornélio Procópio (CKO),Curitiba (CWB),AD5492,—,11:10,11:15,12:30,Estimated departure 11:15
+PR-WOT,08 Feb 2022,—,—,—,—,—,—,—,Unknown
+PR-WOT,08 Feb 2022,Curitiba (CWB),Cornélio Procópio (CKO),AD5491,1:20,9:15,9:21,10:45,Landed 10:41
+PR-WOT,07 Feb 2022,—,—,—,—,—,—,—,Unknown
+PR-WOT,07 Feb 2022,—,—,—,—,—,—,—,Unknown
+PR-WOT,07 Feb 2022,Francisco Beltrao (FBE),Curitiba (CWB),AD5488,—,17:00,17:05,18:35,Estimated departure 17:05
+PR-WOT,07 Feb 2022,—,—,—,—,—,—,—,Unknown
+PR-WOT,07 Feb 2022,Curitiba (CWB),Francisco Beltrao (FBE),AD5487,1:28,14:40,14:48,16:35,Landed 16:16
+PR-WOT,07 Feb 2022,—,Curitiba (CWB),AD5486,—,14:55,14:53,13:55,Estimated departure 14:53
+PR-WOT,07 Feb 2022,—,—,—,—,—,—,—,Unknown
+PR-WOT,07 Feb 2022,Curitiba (CWB),—,AD5485,—,9:00,9:03,14:30,Unknown
+PR-WOT,06 Feb 2022,—,Curitiba (CWB),AD5494,—,20:00,—,18:00,Landed 17:53
+PR-WOT,06 Feb 2022,Curitiba (CWB),—,AD5493,—,15:25,15:27,19:35,Unknown
+PR-WOT,06 Feb 2022,Cornélio Procópio (CKO),Curitiba (CWB),AD5492,—,13:20,13:14,14:40,Estimated departure 13:14
+PR-WOT,06 Feb 2022,Curitiba (CWB),Cornélio Procópio (CKO),AD5491,1:17,11:25,11:32,12:55,Landed 12:49
+PR-WOT,05 Feb 2022,—,—,—,—,—,—,—,Unknown
+PR-WOT,05 Feb 2022,—,—,—,—,18:51,18:51,—,Unknown
+PR-WOT,05 Feb 2022,—,—,—,—,14:55,14:55,—,Unknown
+PR-WOT,05 Feb 2022,—,—,—,—,—,—,—,Unknown
+PR-WOT,05 Feb 2022,Campinas (VCP),—,—,—,—,—,—,Unknown
+PR-WOT,03 Feb 2022,Jundiai (QDV),—,—,—,—,—,—,Unknown
+PR-WOT,03 Feb 2022,—,—,—,—,—,—,—,Unknown
+PR-WOT,03 Feb 2022,—,—,—,—,—,—,—,Unknown
+PR-WOT,03 Feb 2022,Curitiba (CWB),Campo Mourão (CBW),AD5476,—,9:00,9:00,10:50,Canceled
+PR-WOT,03 Feb 2022,—,Curitiba (CWB),—,—,—,—,7:59,Landed 07:59
+PR-WOT,03 Feb 2022,—,—,—,—,—,—,—,Unknown
+PR-WOT,03 Feb 2022,—,—,—,—,—,—,—,Unknown
+PR-WOT,03 Feb 2022,Jundiai (QDV),Curitiba (CWB),AD5998,—,6:30,6:36,8:15,Unknown
+PR-WOT,02 Feb 2022,—,—,—,—,—,—,—,Unknown
+PR-WOT,02 Feb 2022,Curitiba (CWB),Jundiai (QDV),AD5999,—,19:20,19:19,21:05,Estimated departure 19:19
+PR-WOT,02 Feb 2022,—,—,—,—,—,—,—,Unknown
+PR-WOT,02 Feb 2022,Francisco Beltrao (FBE),Curitiba (CWB),AD5488,—,17:00,16:58,18:35,Estimated departure 16:58
+PR-WOT,02 Feb 2022,Curitiba (CWB),Francisco Beltrao (FBE),AD5487,1:25,14:40,14:51,16:35,Landed 16:16
+PR-WOT,02 Feb 2022,—,Curitiba (CWB),AD5486,—,14:55,14:44,13:55,Unknown
+PS-CNA,11 Feb 2022,Lábrea (LBR),Coari (CIZ),AD5540,—,9:10,—,10:45,Scheduled
+PS-CNA,11 Feb 2022,Manaus (MAO),Lábrea (LBR),AD5540,—,6:00,—,8:40,Scheduled
+PS-CNA,10 Feb 2022,Tucurui (TUR),Belem (BEL),AD5336,—,17:25,—,18:55,Scheduled
+PS-CNA,10 Feb 2022,Belem (BEL),Tucurui (TUR),AD5335,—,15:30,—,17:00,Scheduled
+PS-CNA,10 Feb 2022,Almeirim (MEU),Belem (BEL),AD5322,—,12:30,—,14:30,Scheduled
+PS-CNA,10 Feb 2022,Belem (BEL),Almeirim (MEU),AD5321,—,10:20,—,12:05,Scheduled
+PS-CNA,10 Feb 2022,Tucurui (TUR),Belem (BEL),AD5332,—,7:55,—,9:20,Scheduled
+PS-CNA,10 Feb 2022,Belem (BEL),Tucurui (TUR),AD5331,—,6:00,—,7:30,Scheduled
+PS-CNA,09 Feb 2022,Tucurui (TUR),Belem (BEL),AD5326,—,18:10,—,19:40,Scheduled
+PS-CNA,09 Feb 2022,Belem (BEL),Tucurui (TUR),AD5325,—,16:15,—,17:45,Scheduled
+PS-CNA,09 Feb 2022,Belem (BEL),—,AD5582,—,11:41,11:41,—,Scheduled
+PS-CNA,09 Feb 2022,Breves (BVS),Belem (BEL),AD5582,—,8:35,9:35,9:40,Unknown
+PS-CNA,09 Feb 2022,Belem (BEL),Breves (BVS),AD5581,0:49,8:17,8:17,9:06,Landed 09:06
+PS-CNA,09 Feb 2022,Belem (BEL),Breves (BVS),AD5581,1:01,7:00,9:37,8:00,Landed 10:38
+PS-CNA,08 Feb 2022,Tucurui (TUR),Belem (BEL),AD5336,1:11,17:25,17:55,18:55,Landed 19:06
+PS-CNA,08 Feb 2022,Belem (BEL),Tucurui (TUR),AD5335,—,15:30,16:05,17:00,Estimated departure 16:05
+PS-CNA,08 Feb 2022,Belem (BEL),Tucurui (TUR),AD5335,4:19,12:57,12:57,17:16,Landed 17:16
+PS-CNA,08 Feb 2022,Almeirim (MEU),Belem (BEL),AD5322,—,12:30,12:53,14:30,Estimated departure 12:53
+PS-CNA,08 Feb 2022,Belem (BEL),Almeirim (MEU),AD5321,1:38,10:20,10:32,12:05,Landed 12:10
+PS-CNA,08 Feb 2022,Tucurui (TUR),Belem (BEL),AD5332,1:08,7:55,7:55,9:20,Landed 09:03
+PS-CNA,08 Feb 2022,Belem (BEL),Tucurui (TUR),AD5331,1:04,6:00,6:10,7:30,Landed 07:14
+PS-CNA,07 Feb 2022,Belem (BEL),Breves (BVS),AD5962,—,16:15,16:10,17:15,Estimated departure 16:10
+PS-CNA,07 Feb 2022,Belem (BEL),Tucurui (TUR),AD5325,—,16:15,—,17:45,Canceled
+PS-CNA,07 Feb 2022,Belem (BEL),Almeirim (MEU),AD5580,3:14,10:20,13:46,12:05,Landed 17:00
+PS-CNA,07 Feb 2022,Belem (BEL),Almeirim (MEU),AD5580,1:26,10:14,10:14,11:40,Landed 11:40
+PS-CNA,07 Feb 2022,Breves (BVS),Belem (BEL),AD5863,0:53,8:35,17:46,9:40,Landed 18:39
+PS-CNA,07 Feb 2022,Belem (BEL),Breves (BVS),AD5862,—,7:00,7:07,8:00,Diverted to BEL
+PS-CNA,06 Feb 2022,Tucurui (TUR),Belem (BEL),AD5330,1:08,14:50,14:46,16:15,Landed 15:54
+PS-CNA,06 Feb 2022,Belem (BEL),Tucurui (TUR),AD5328,1:10,12:51,12:51,14:00,Landed 14:00
+PS-CNA,06 Feb 2022,Belem (BEL),Tucurui (TUR),AD5329,—,12:45,12:51,14:15,Estimated departure 12:51
+PS-CNA,06 Feb 2022,Paragominas (JPE),Belem (BEL),AD5328,0:50,11:55,10:55,12:00,Landed 11:45
+PS-CNA,06 Feb 2022,Belem (BEL),Tucurui (TUR),AD5328,—,9:15,9:15,—,Unknown
+PS-CNA,05 Feb 2022,Tucurui (TUR),Belem (BEL),AD5330,—,14:50,14:49,16:15,Estimated departure 14:49
+PS-CNA,05 Feb 2022,Tucurui (TUR),Belem (BEL),AD5328,1:14,14:48,14:48,16:02,Landed 16:02
+PS-CNA,05 Feb 2022,Belem (BEL),Tucurui (TUR),AD5329,—,12:45,12:41,14:15,Estimated departure 12:41
+PS-CNA,05 Feb 2022,Belem (BEL),Tucurui (TUR),AD5328,1:12,12:41,12:41,13:53,Landed 13:53
+PS-CNA,05 Feb 2022,Paragominas (JPE),Belem (BEL),AD5328,0:51,11:55,10:57,12:00,Landed 11:48
+PS-CNA,05 Feb 2022,Belem (BEL),Paragominas (JPE),AD5327,0:52,9:15,9:19,11:25,Landed 10:11
+PS-CNA,04 Feb 2022,Belem (BEL),Tucurui (TUR),AD5325,—,16:15,—,17:45,Canceled
+PS-CNA,04 Feb 2022,Belem (BEL),Belem (BEL),AD5580,1:40,13:13,13:13,14:53,Landed 14:53
+PS-CNA,04 Feb 2022,Belem (BEL),Almeirim (MEU),AD5580,1:22,10:20,10:14,12:05,Landed 11:36
+PS-CNA,04 Feb 2022,Breves (BVS),Belem (BEL),AD5582,—,8:35,8:28,9:40,Estimated departure 08:28
+PS-CNA,04 Feb 2022,—,Belem (BEL),AD5582,0:54,11:28,11:28,9:22,Landed 09:22
+PS-CNA,04 Feb 2022,Belem (BEL),Breves (BVS),AD5581,0:45,7:00,6:56,8:00,Landed 07:41
+PS-CNA,03 Feb 2022,Tucurui (TUR),Belem (BEL),AD5330,1:17,14:50,14:44,16:15,Landed 16:01
+PS-CNA,03 Feb 2022,Belem (BEL),Tucurui (TUR),AD5329,1:05,12:45,12:49,14:15,Landed 13:54
+PS-CNA,03 Feb 2022,Paragominas (JPE),Belem (BEL),AD5328,0:52,11:55,10:56,12:00,Landed 11:48
+PS-CNA,03 Feb 2022,Belem (BEL),Paragominas (JPE),AD5327,0:48,9:15,9:25,11:25,Landed 10:13
+PS-CNA,03 Feb 2022,—,Belem (BEL),AD5550,0:59,10:28,10:28,8:27,Landed 08:27
+PS-CNA,03 Feb 2022,Breves (BVS),Belem (BEL),AD5324,—,7:25,7:29,8:30,Estimated departure 07:29
+PS-CNA,03 Feb 2022,Belem (BEL),Tucurui (TUR),AD5550,0:46,6:05,6:05,6:51,Landed 06:51
+PS-CNA,03 Feb 2022,Belem (BEL),Breves (BVS),AD5323,—,6:00,6:04,7:00,Estimated departure 06:04
+PS-CNA,02 Feb 2022,Santarem (STM),Belem (BEL),AD5550,2:45,14:51,14:51,17:36,Landed 17:36
+PS-CNA,02 Feb 2022,Santarem (STM),Belem (BEL),AD5468,—,14:30,14:51,17:20,Estimated departure 14:51
+PS-CNA,02 Feb 2022,Itaituba (ITB),Santarem (STM),AD5550,—,12:35,12:33,13:40,Estimated departure 12:33
+PS-CNA,02 Feb 2022,Juruti (JRT),Itaituba (ITB),AD5550,2:22,9:55,10:05,11:55,Landed 13:27
+PS-CNB,11 Feb 2022,Juína (JIA),Aripuanã (AIR),AD5596,—,10:25,—,11:10,Scheduled
+PS-CNB,11 Feb 2022,Cuiaba (CGB),Juína (JIA),AD5596,—,7:45,—,10:00,Scheduled
+PS-CNB,10 Feb 2022,Barra do Garcas (BPG),Cuiaba (CGB),AD5341,—,20:50,—,21:35,Scheduled
+PS-CNB,10 Feb 2022,Cuiaba (CGB),Barra do Garcas (BPG),AD5340,—,17:20,—,20:05,Scheduled
+PS-CNB,09 Feb 2022,Barra do Garcas (BPG),Cuiaba (CGB),AD5341,—,19:50,—,20:35,Scheduled
+PS-CNB,09 Feb 2022,Cuiaba (CGB),Barra do Garcas (BPG),AD5340,—,16:20,—,19:05,Scheduled
+PS-CNB,09 Feb 2022,Tangara Da Serra (TGQ),Cuiaba (CGB),AD5598,—,14:45,—,15:40,Scheduled
+PS-CNB,09 Feb 2022,Juína (JIA),Tangara Da Serra (TGQ),AD5598,—,12:50,—,14:25,Scheduled
+PS-CNB,09 Feb 2022,Aripuanã (AIR),Juína (JIA),AD5597,—,11:35,—,12:20,Scheduled
+PS-CNB,09 Feb 2022,Juína (JIA),Aripuanã (AIR),AD5596,—,10:25,10:53,11:10,Estimated 11:25
+PS-CNB,09 Feb 2022,Cuiaba (CGB),Juína (JIA),AD5596,2:03,7:45,7:51,10:00,Landed 09:54
+PS-CNB,08 Feb 2022,Barra do Garcas (BPG),Cuiaba (CGB),AD5861,1:27,21:10,20:51,21:55,Landed 22:18
+PS-CNB,08 Feb 2022,Cuiaba (CGB),Barra do Garcas (BPG),AD5340,1:25,17:40,18:49,20:25,Landed 20:15
+PS-CNB,08 Feb 2022,Agua Boa (GGB),Cuiaba (CGB),AD5512,—,16:10,—,17:10,Unknown
+PS-CNB,08 Feb 2022,Agua Boa (GGB),Cuiaba (CGB),AD5512,1:52,15:03,15:03,16:55,Landed 16:55
+PS-CNB,08 Feb 2022,—,Agua Boa (GGB),AD5512,2:13,16:21,16:21,14:34,Landed 14:34
+PS-CNB,08 Feb 2022,Agua Boa (GGB),São Félix Do Araguaia (SXO),AD5510,1:09,11:25,10:40,11:45,Landed 11:49
+PS-CNB,08 Feb 2022,Cuiaba (CGB),Agua Boa (GGB),AD5510,1:45,8:05,8:14,11:05,Landed 10:00
+PS-CNB,07 Feb 2022,Barra do Garcas (BPG),Cuiaba (CGB),AD5341,1:34,20:10,20:02,20:55,Landed 21:36
+PS-CNB,07 Feb 2022,Cuiaba (CGB),Barra do Garcas (BPG),AD5340,1:28,16:40,17:34,19:25,Landed 19:02
+PS-CNB,07 Feb 2022,Tangara Da Serra (TGQ),Cuiaba (CGB),AD5598,1:18,15:05,15:22,16:00,Landed 16:39
+PS-CNB,07 Feb 2022,Juína (JIA),Tangara Da Serra (TGQ),AD5598,1:22,13:10,13:33,14:45,Landed 14:55
+PS-CNB,07 Feb 2022,Aripuanã (AIR),Juína (JIA),AD5597,—,11:55,12:08,12:40,Estimated departure 12:08
+PS-CNB,07 Feb 2022,—,—,AD5339,—,15:00,15:00,—,Unknown
+PS-CNB,07 Feb 2022,Juína (JIA),Aripuanã (AIR),AD5596,—,10:45,10:59,11:30,Estimated departure 10:59
+PS-CNB,07 Feb 2022,Cuiaba (CGB),—,2F5339,—,8:14,8:14,—,Unknown
+PS-CNB,07 Feb 2022,Cuiaba (CGB),Juína (JIA),AD5596,—,8:05,8:14,10:20,Estimated departure 08:14
+PS-CNB,06 Feb 2022,Juína (JIA),Cuiaba (CGB),AD5339,1:53,14:55,14:56,17:05,Landed 16:49
+PS-CNB,06 Feb 2022,Aripuanã (AIR),Juína (JIA),AD5339,—,13:40,13:35,14:25,Estimated departure 13:35
+PS-CNB,06 Feb 2022,Cuiaba (CGB),Aripuanã (AIR),AD5339,2:31,10:20,10:24,13:15,Landed 12:55
+PS-CNB,05 Feb 2022,Juína (JIA),Cuiaba (CGB),AD5338,2:01,8:40,8:33,10:50,Landed 10:34
+PS-CNB,05 Feb 2022,Aripuanã (AIR),Juína (JIA),AD5338,—,7:05,6:57,7:50,Estimated departure 06:57
+PS-CNB,05 Feb 2022,Cuiaba (CGB),Aripuanã (AIR),AD5338,2:42,3:40,3:47,6:35,Landed 06:29
+PS-CNB,04 Feb 2022,Barra do Garcas (BPG),Cuiaba (CGB),AD5341,1:23,20:50,19:57,21:35,Landed 21:21
+PS-CNB,04 Feb 2022,Cuiaba (CGB),—,AD5502,1:28,17:29,17:29,22:57,Landed 22:57
+PS-CNB,04 Feb 2022,Cuiaba (CGB),Barra do Garcas (BPG),AD5340,—,17:20,17:29,20:05,Estimated departure 17:29
+PS-CNB,04 Feb 2022,Agua Boa (GGB),Cuiaba (CGB),AD5502,1:41,15:50,14:59,16:50,Landed 16:39
+PS-CNB,04 Feb 2022,—,Agua Boa (GGB),AD5341,1:59,16:17,16:17,14:15,Landed 14:15
+PS-CNB,04 Feb 2022,Agua Boa (GGB),—,AD5341,1:13,10:21,10:21,15:33,Landed 15:33
+PS-CNB,04 Feb 2022,Cuiaba (CGB),Agua Boa (GGB),AD5341,1:45,8:01,8:01,9:46,Landed 09:46
+PS-CNB,03 Feb 2022,Barra do Garcas (BPG),Cuiaba (CGB),AD5341,—,19:50,18:39,20:35,Estimated departure 18:39
+PS-CNB,03 Feb 2022,—,Cuiaba (CGB),AD5341,1:26,22:39,22:39,20:05,Landed 20:05
+PS-CNB,03 Feb 2022,Cuiaba (CGB),—,AD5593,1:23,16:34,16:34,21:57,Landed 21:57
+PS-CNB,03 Feb 2022,Cuiaba (CGB),Barra do Garcas (BPG),AD5340,—,16:20,16:34,19:05,Estimated departure 16:34
+PS-CNB,03 Feb 2022,Tangara Da Serra (TGQ),Cuiaba (CGB),AD5593,0:45,14:59,14:59,15:44,Landed 15:44
+PS-CNB,03 Feb 2022,—,Tangara Da Serra (TGQ),AD5593,1:12,17:19,17:19,14:31,Landed 14:31
+PS-CNB,03 Feb 2022,Cuiaba (CGB),Juína (JIA),AD5592,3:09,7:45,8:25,10:00,Landed 11:34
+PS-CNB,02 Feb 2022,Cuiaba (CGB),Barra do Garcas (BPG),AD5340,—,17:20,—,20:05,Canceled
+PS-CNB,02 Feb 2022,Agua Boa (GGB),Cuiaba (CGB),AD5341,1:44,16:32,16:32,18:16,Landed 18:16
+PS-CNB,02 Feb 2022,—,Agua Boa (GGB),AD5341,2:02,16:39,16:39,14:40,Landed 14:40
+PS-CNB,02 Feb 2022,Agua Boa (GGB),—,AD5341,1:15,10:33,10:33,15:48,Landed 15:48
+PS-CNT,11 Feb 2022,Bage (BGX),Porto Alegre (POA),AD5438,—,5:00,—,6:25,Scheduled
+PS-CNT,10 Feb 2022,Porto Alegre (POA),Bage (BGX),AD5437,—,22:25,—,23:55,Scheduled
+PS-CNT,10 Feb 2022,Santa Rosa (SRA),Porto Alegre (POA),AD5435,—,20:00,—,21:40,Scheduled
+PS-CNT,10 Feb 2022,Porto Alegre (POA),Santa Rosa (SRA),AD5434,—,17:45,—,19:35,Scheduled
+PS-CNT,10 Feb 2022,Bage (BGX),Porto Alegre (POA),AD5438,—,5:00,—,6:25,Scheduled
+PS-CNT,09 Feb 2022,Porto Alegre (POA),Bage (BGX),AD5436,—,21:35,—,23:05,Scheduled
+PS-CNT,09 Feb 2022,Erechim (ERM),Porto Alegre (POA),AD5427,—,19:35,—,20:50,Scheduled
+PS-CNT,09 Feb 2022,Porto Alegre (POA),Erechim (ERM),AD5426,—,17:45,—,19:10,Scheduled
+PS-CNT,09 Feb 2022,Pleasanton (JBS),Porto Alegre (POA),AD5421,1:42,4:45,4:43,11:50,Landed 11:25
+PS-CNT,09 Feb 2022,Porto Alegre (POA),Pleasanton (JBS),AD5420,1:45,7:10,7:18,4:20,Landed 04:02
+PS-CNT,09 Feb 2022,Porto Alegre (POA),Porto Alegre (POA),AD5437,1:11,5:07,5:07,6:18,Landed 06:18
+PS-CNT,09 Feb 2022,Bage (BGX),Porto Alegre (POA),AD5438,—,5:00,5:02,6:25,Estimated departure 05:02
+PS-CNT,08 Feb 2022,Porto Alegre (POA),Bage (BGX),AD5437,1:12,22:25,22:27,23:55,Landed 23:39
+PS-CNT,08 Feb 2022,Santa Rosa (SRA),Porto Alegre (POA),AD5435,1:21,20:00,19:58,21:40,Landed 21:20
+PS-CNT,08 Feb 2022,Porto Alegre (POA),Santa Rosa (SRA),AD5434,1:29,17:45,17:44,19:35,Landed 19:12
+PS-CNT,08 Feb 2022,Vacaria (VCC),Porto Alegre (POA),AD5433,0:44,16:05,15:56,17:00,Landed 16:40
+PS-CNT,08 Feb 2022,Porto Alegre (POA),Vacaria (VCC),AD5432,0:42,14:40,14:47,15:40,Landed 15:28
+PS-CNT,08 Feb 2022,—,Porto Alegre (POA),AD5431,0:24,16:23,16:23,13:47,Landed 13:47
+PS-CNT,08 Feb 2022,Porto Alegre (POA),Canela (QCN),AD5430,0:25,12:20,12:27,12:40,Landed 12:52
+PS-CNT,08 Feb 2022,Alegrete (ALQ),Porto Alegre (POA),AD5429,1:44,9:35,9:31,11:25,Landed 11:15
+PS-CNT,08 Feb 2022,Porto Alegre (POA),Alegrete (ALQ),AD5428,1:37,7:10,7:24,9:10,Landed 09:01
+PS-CNT,08 Feb 2022,Bage (BGX),Porto Alegre (POA),AD5438,1:11,5:00,5:11,6:25,Landed 06:21
+PS-CNT,07 Feb 2022,Porto Alegre (POA),Bage (BGX),AD5436,1:17,21:35,21:42,23:05,Landed 22:59
+PS-CNT,07 Feb 2022,Erechim (ERM),Porto Alegre (POA),AD5427,1:11,19:35,19:34,20:50,Landed 20:46
+PS-CNT,07 Feb 2022,Porto Alegre (POA),—,AD5425,1:05,17:50,17:50,21:55,Landed 21:55
+PS-CNT,07 Feb 2022,Porto Alegre (POA),Erechim (ERM),AD5426,—,17:45,17:50,19:10,Estimated departure 17:50
+PS-CNT,07 Feb 2022,Porto Alegre (POA),Santa Cruz Do Sul (CSU),AD5424,0:41,16:23,16:23,17:04,Landed 17:04
+PS-CNT,07 Feb 2022,Santa Cruz Do Sul (CSU),Porto Alegre (POA),AD5425,—,16:15,16:24,17:00,Estimated departure 16:24
+PS-CNT,07 Feb 2022,Porto Alegre (POA),Santa Cruz Do Sul (CSU),AD5424,0:35,15:05,15:27,15:50,Landed 16:02
+PS-CNT,07 Feb 2022,Porto Alegre (POA),Porto Alegre (POA),AD5423,1:19,12:45,12:45,14:04,Landed 14:04
+PS-CNT,07 Feb 2022,Porto Alegre (POA),Canela (QCN),AD5422,—,12:35,12:45,13:09,Estimated departure 12:45
+PS-CNT,07 Feb 2022,Pleasanton (JBS),Porto Alegre (POA),AD5421,1:52,4:45,4:48,11:50,Landed 11:39
+PS-CNT,07 Feb 2022,Porto Alegre (POA),Pleasanton (JBS),AD5420,1:54,7:10,7:19,4:20,Landed 04:13
+PS-CNT,07 Feb 2022,Bage (BGX),Porto Alegre (POA),AD5438,1:14,5:00,5:10,6:25,Landed 06:23
+PS-CNT,06 Feb 2022,Porto Alegre (POA),Bage (BGX),AD5437,1:21,22:25,22:51,23:55,Landed 00:12
+PS-CNT,06 Feb 2022,Porto Alegre (POA),Porto Alegre (POA),AD5435,1:32,20:18,20:18,21:50,Landed 21:50
+PS-CNT,06 Feb 2022,Santa Rosa (SRA),Porto Alegre (POA),AD5435,—,20:00,20:17,21:40,Estimated departure 20:17
+PS-CNT,06 Feb 2022,Porto Alegre (POA),Santa Rosa (SRA),AD5434,—,17:45,16:46,19:35,Unknown
+PS-CNT,06 Feb 2022,Vacaria (VCC),Porto Alegre (POA),AD5433,—,16:05,16:46,17:00,Unknown
+PS-CNT,06 Feb 2022,Porto Alegre (POA),Vacaria (VCC),AD5432,0:41,14:40,15:36,15:40,Landed 16:16
+PS-CNT,05 Feb 2022,Curitiba (CWB),Porto Alegre (POA),AD5951,2:08,18:57,18:57,21:05,Landed 21:05
+PS-CNT,05 Feb 2022,Umuarama (UMU),Curitiba (CWB),AD5483,1:34,10:50,10:44,12:40,Landed 12:18
+PS-CNT,05 Feb 2022,Curitiba (CWB),Umuarama (UMU),AD5482,1:49,8:30,8:34,10:25,Landed 10:24
+PS-CNT,04 Feb 2022,Francisco Beltrao (FBE),Curitiba (CWB),AD5488,1:18,17:00,16:52,18:35,Landed 18:10
+PS-CNT,04 Feb 2022,Curitiba (CWB),Arapongas (APX),AD5474,—,14:45,—,16:25,Canceled
+PS-CNT,04 Feb 2022,Curitiba (CWB),Francisco Beltrao (FBE),AD5487,1:34,14:40,14:45,16:35,Landed 16:19
+PS-CNT,04 Feb 2022,—,Curitiba (CWB),AD5481,0:51,16:02,16:02,13:53,Landed 13:53
+PS-CNT,04 Feb 2022,Telêmaco Borba (TEC),Curitiba (CWB),AD5473,—,12:55,13:04,14:00,Estimated departure 13:04
+PS-CNT,04 Feb 2022,Curitiba (CWB),Cianorte (GGH),AD5481,0:55,11:42,11:42,11:37,Landed 11:37
+PS-CNT,04 Feb 2022,Curitiba (CWB),Telêmaco Borba (TEC),AD5472,—,11:20,11:44,12:30,Estimated departure 11:44
+PS-CNT,04 Feb 2022,Maringa (MGF),Curitiba (CWB),AD5481,1:18,9:42,9:42,11:00,Landed 11:00
+PS-CNT,04 Feb 2022,Maringa (MGF),Curitiba (CWB),AD5920,—,9:15,9:43,10:45,Estimated departure 09:43
+PS-CNT,04 Feb 2022,Curitiba (CWB),Cianorte (GGH),AD5481,1:52,6:43,6:43,7:35,Landed 07:35
+PS-CNT,04 Feb 2022,Curitiba (CWB),Cianorte (GGH),AD5470,—,6:30,6:45,8:30,Estimated departure 06:45
+PS-CNT,03 Feb 2022,Umuarama (UMU),Curitiba (CWB),AD5481,1:36,20:05,20:00,21:55,Landed 21:36
+PS-CNT,03 Feb 2022,Curitiba (CWB),Umuarama (UMU),AD5480,1:51,17:15,17:14,19:10,Landed 19:06
+PS-CNT,03 Feb 2022,Curitiba (CWB),Curitiba (CWB),AD5478,1:06,15:31,15:31,16:37,Landed 16:37
+PS-CNT,03 Feb 2022,Apucarana (APU),Curitiba (CWB),AD5479,—,15:30,15:32,16:50,Estimated departure 15:32
+PS-CNT,03 Feb 2022,Curitiba (CWB),Apucarana (APU),AD5478,1:25,13:30,13:38,15:05,Landed 15:03
+PS-CNT,03 Feb 2022,Curitiba (CWB),Curitiba (CWB),AD5475,1:01,11:40,11:40,12:41,Landed 12:41
+PS-CNT,03 Feb 2022,Cornélio Procópio (CKO),Curitiba (CWB),AD5492,—,11:10,11:41,12:30,Estimated departure 11:41
+PS-CNT,03 Feb 2022,Curitiba (CWB),Arapongas (APX),AD5475,1:26,9:32,9:32,10:58,Landed 10:58
+PS-CNT,03 Feb 2022,Curitiba (CWB),Cornélio Procópio (CKO),AD5491,—,9:15,9:35,10:45,Estimated departure 09:35
+PS-CNT,02 Feb 2022,Arapongas (APX),Curitiba (CWB),AD5475,—,16:50,16:40,18:20,Estimated departure 16:40
+PS-CNT,02 Feb 2022,Curitiba (CWB),Arapongas (APX),AD5475,1:15,16:38,16:38,17:53,Landed 17:53
+PS-CNT,02 Feb 2022,Curitiba (CWB),Arapongas (APX),AD5474,1:18,14:45,14:51,16:25,Landed 16:10
+PS-CNT,02 Feb 2022,Telêmaco Borba (TEC),Curitiba (CWB),AD5473,0:48,12:55,12:52,14:00,Landed 13:40
+PS-CNT,02 Feb 2022,Curitiba (CWB),—,AD5471,0:56,11:10,11:10,15:06,Landed 15:06
+PT-MEA,11 Feb 2022,Recife (REC),Serra Talhada (SET),AD5362,—,8:35,—,10:10,Scheduled
+PT-MEA,10 Feb 2022,Recife (REC),Serra Talhada (SET),AD5362,—,8:35,—,10:10,Scheduled
+PT-MEA,09 Feb 2022,Serra Talhada (SET),Recife (REC),AD5363,1:28,10:35,10:31,12:15,Landed 11:59
+PT-MEA,09 Feb 2022,Recife (REC),Serra Talhada (SET),AD5362,1:26,8:35,8:42,10:10,Landed 10:07
+PT-MEA,08 Feb 2022,—,Recife (REC),AD5369,1:09,20:25,20:46,18:40,Landed 18:55
+PT-MEA,08 Feb 2022,Recife (REC),Patos (JPO),AD5368,1:12,15:45,15:49,17:00,Landed 17:01
+PT-MEA,08 Feb 2022,Caruaru (CAU),Recife (REC),AD5365,0:34,14:20,14:16,15:00,Landed 14:50
+PT-MEA,08 Feb 2022,Recife (REC),Caruaru (CAU),AD5364,0:33,13:15,13:09,13:55,Landed 13:42
+PT-MEA,08 Feb 2022,Serra Talhada (SET),Recife (REC),AD5363,1:26,10:35,10:35,12:15,Landed 12:01
+PT-MEA,08 Feb 2022,Recife (REC),Serra Talhada (SET),AD5362,1:30,8:35,8:34,10:10,Landed 10:04
+PT-MEA,07 Feb 2022,Patos (JPO),Recife (REC),AD5369,0:48,17:25,17:48,18:40,Landed 18:36
+PT-MEA,07 Feb 2022,Recife (REC),Patos (JPO),AD5368,1:08,15:45,15:47,17:00,Landed 16:55
+PT-MEA,07 Feb 2022,Caruaru (CAU),Recife (REC),AD5363,0:32,14:24,14:24,14:55,Landed 14:55
+PT-MEA,07 Feb 2022,Caruaru (CAU),Recife (REC),AD5365,—,14:20,14:24,15:00,Estimated departure 14:24
+PT-MEA,07 Feb 2022,Recife (REC),Caruaru (CAU),AD5363,0:32,13:25,13:25,13:57,Landed 13:57
+PT-MEA,07 Feb 2022,Recife (REC),Caruaru (CAU),AD5364,—,13:15,13:26,13:55,Estimated departure 13:26
+PT-MEA,07 Feb 2022,Serra Talhada (SET),Recife (REC),AD5363,1:27,10:35,10:28,12:15,Landed 11:54
+PT-MEA,07 Feb 2022,Recife (REC),Serra Talhada (SET),AD5362,1:26,8:35,8:35,10:10,Landed 10:00
+PT-MEA,04 Feb 2022,Patos (JPO),Recife (REC),AD5369,—,17:25,—,18:40,Landed 18:45
+PT-MEA,04 Feb 2022,Recife (REC),Patos (JPO),AD5368,1:15,15:45,15:53,17:00,Landed 17:08
+PT-MEA,04 Feb 2022,Caruaru (CAU),Recife (REC),AD5365,0:33,14:20,14:28,15:00,Landed 15:01
+PT-MEA,04 Feb 2022,Recife (REC),Caruaru (CAU),AD5364,0:35,13:15,13:25,13:55,Landed 14:00
+PT-MEA,04 Feb 2022,Serra Talhada (SET),Recife (REC),AD5363,1:49,10:35,10:16,12:15,Landed 12:05
+PT-MEA,04 Feb 2022,Recife (REC),Serra Talhada (SET),AD5362,1:25,8:35,8:27,10:10,Landed 09:52
+PT-MEA,03 Feb 2022,—,Recife (REC),AD5369,1:06,20:25,20:40,18:40,Landed 18:46
+PT-MEA,03 Feb 2022,Recife (REC),Patos (JPO),AD5368,1:16,15:45,15:57,17:00,Landed 17:13
+PT-MEA,03 Feb 2022,Caruaru (CAU),Recife (REC),AD5365,0:35,14:20,14:20,15:00,Landed 14:55
+PT-MEA,03 Feb 2022,Recife (REC),Caruaru (CAU),AD5364,0:33,13:15,13:16,13:55,Landed 13:49
+PT-MEA,03 Feb 2022,Serra Talhada (SET),Recife (REC),AD5363,1:29,10:35,10:16,12:15,Landed 11:46
+PT-MEA,03 Feb 2022,Recife (REC),Serra Talhada (SET),AD5362,1:24,8:35,8:33,10:10,Landed 09:57
+PT-MEA,02 Feb 2022,—,Recife (REC),AD5369,1:09,20:25,20:21,18:40,Landed 18:29
+PT-MEA,02 Feb 2022,Recife (REC),Patos (JPO),AD5368,1:07,15:45,15:41,17:00,Landed 16:49
+PT-MEA,02 Feb 2022,Caruaru (CAU),Recife (REC),AD5365,0:32,14:20,14:14,15:00,Landed 14:46
+PT-MEA,02 Feb 2022,Recife (REC),Caruaru (CAU),AD5364,0:32,13:15,13:15,13:55,Landed 13:47
+PT-MED,11 Feb 2022,Belem (BEL),Santarem (STM),AD5467,—,2:40,—,5:15,Scheduled
+PT-MED,10 Feb 2022,Coari (CIZ),Manaus (MAO),AD5320,—,16:40,—,18:15,Scheduled
+PT-MED,10 Feb 2022,Manaus (MAO),Coari (CIZ),AD5319,—,14:45,—,16:15,Scheduled
+PT-MED,10 Feb 2022,Maués (MBZ),Manaus (MAO),AD5318,—,12:40,—,13:50,Scheduled
+PT-MED,10 Feb 2022,Manaus (MAO),Maués (MBZ),AD5317,—,11:00,—,12:15,Scheduled
+PT-MED,10 Feb 2022,Coari (CIZ),Manaus (MAO),AD5312,—,8:25,—,10:00,Scheduled
+PT-MED,10 Feb 2022,Manaus (MAO),Coari (CIZ),AD5311,—,6:30,—,8:00,Scheduled
+PT-MED,09 Feb 2022,Santarem (STM),Manaus (MAO),AD5900,—,14:25,—,15:25,Scheduled
+PT-MED,09 Feb 2022,Juruti (JRT),Itaituba (ITB),AD5550,—,9:55,—,11:55,Scheduled
+PT-MED,09 Feb 2022,Óbidos (OBI),Oriximiná (ORX),AD5550,—,9:15,8:49,9:45,Unknown
+PT-MED,09 Feb 2022,Monte Alegre (MTE),Óbidos (OBI),AD5550,—,8:10,7:09,8:50,Unknown
+PT-MED,09 Feb 2022,Santarem (STM),Monte Alegre (MTE),AD5550,0:22,6:15,6:21,7:50,Landed 06:43
+PT-MED,09 Feb 2022,Belem (BEL),Santarem (STM),AD5467,2:25,2:40,2:44,5:15,Landed 05:09
+PT-MED,08 Feb 2022,Tucurui (TUR),Belem (BEL),AD5330,1:40,14:50,14:45,16:15,Landed 16:25
+PT-MED,08 Feb 2022,Belem (BEL),Tucurui (TUR),AD5329,1:11,12:45,13:00,14:15,Landed 14:11
+PT-MED,08 Feb 2022,Paragominas (JPE),Belem (BEL),AD5328,0:49,11:55,10:59,12:00,Landed 11:47
+PT-MED,08 Feb 2022,Belem (BEL),Paragominas (JPE),AD5327,0:53,9:15,9:14,11:25,Landed 10:07
+PT-MED,08 Feb 2022,Breves (BVS),Belem (BEL),AD5324,0:53,7:25,7:28,8:30,Landed 08:21
+PT-MED,08 Feb 2022,Belem (BEL),Breves (BVS),AD5323,0:47,6:00,6:07,7:00,Landed 06:54
+PT-MED,07 Feb 2022,Santarem (STM),Belem (BEL),AD5468,2:39,14:30,15:16,17:20,Landed 17:55
+PT-MED,07 Feb 2022,Itaituba (ITB),Santarem (STM),AD5550,0:59,12:35,12:31,13:40,Landed 13:30
+PT-MED,07 Feb 2022,Juruti (JRT),Itaituba (ITB),AD5550,1:40,9:55,9:03,11:55,Landed 11:43
+PT-MED,07 Feb 2022,Porto Trombetas (TMT),Juruti (JRT),AD5550,—,10:00,10:03,9:30,Diverted to ITB
+PT-MED,07 Feb 2022,Óbidos (OBI),Oriximiná (ORX),AD5550,—,9:15,—,8:45,Diverted to TMT
+PT-MED,07 Feb 2022,Oriximiná (ORX),Porto Trombetas (TMT),AD5550,—,9:10,9:19,9:35,Estimated departure 09:19
+PT-MED,07 Feb 2022,Monte Alegre (MTE),Óbidos (OBI),AD5550,1:19,8:10,7:11,7:50,Landed 08:31
+PT-MED,07 Feb 2022,Santarem (STM),Monte Alegre (MTE),AD5550,0:25,6:15,6:27,7:50,Landed 06:52
+PT-MED,07 Feb 2022,Belem (BEL),Santarem (STM),AD5467,2:33,2:40,2:53,5:15,Landed 05:26
+PT-MED,06 Feb 2022,Tucurui (TUR),Belem (BEL),AD5336,1:22,17:25,17:25,18:55,Landed 18:47
+PT-MED,06 Feb 2022,Belem (BEL),Tucurui (TUR),AD5335,1:10,15:30,15:22,17:00,Landed 16:31
+PT-MED,06 Feb 2022,Almeirim (MEU),Belem (BEL),AD5322,—,12:30,12:37,14:30,Unknown
+PT-MED,06 Feb 2022,Belem (BEL),Almeirim (MEU),AD5321,1:32,10:20,10:22,12:05,Landed 11:53
+PT-MED,06 Feb 2022,Tucurui (TUR),Belem (BEL),AD5332,1:09,7:55,7:53,9:20,Landed 09:02
+PT-MED,06 Feb 2022,Belem (BEL),Tucurui (TUR),AD5331,1:07,6:00,6:04,7:30,Landed 07:11
+PT-MED,05 Feb 2022,Almeirim (MEU),Belem (BEL),AD5322,—,17:10,17:11,19:10,Unknown
+PT-MED,05 Feb 2022,Belem (BEL),Almeirim (MEU),AD5321,1:40,15:00,15:01,16:45,Landed 16:41
+PT-MED,05 Feb 2022,Tucurui (TUR),Belem (BEL),AD5334,1:09,12:40,12:40,14:05,Landed 13:48
+PT-MED,05 Feb 2022,Belem (BEL),Tucurui (TUR),AD5333,1:12,10:45,10:42,12:15,Landed 11:54
+PT-MED,05 Feb 2022,—,Belem (BEL),AD5861,0:55,11:57,11:57,9:52,Landed 09:52
+PT-MED,05 Feb 2022,Belem (BEL),Breves (BVS),AD5860,0:50,6:58,6:58,7:48,Landed 07:48
+PT-MED,04 Feb 2022,Santarem (STM),Belem (BEL),AD5468,2:43,14:30,14:34,17:20,Landed 17:17
+PT-MED,04 Feb 2022,Itaituba (ITB),Santarem (STM),AD5550,0:59,12:35,12:30,13:40,Landed 13:30
+PT-MED,04 Feb 2022,Porto Trombetas (TMT),Itaituba (ITB),AD5550,1:58,10:00,9:50,10:30,Landed 11:48
+PT-MED,04 Feb 2022,Porto Trombetas (TMT),Juruti (JRT),AD5550,—,—,—,8:15,Diverted to TMT
+PT-MED,04 Feb 2022,Oriximiná (ORX),Porto Trombetas (TMT),AD5550,—,9:10,8:59,9:35,Estimated departure 08:59
+PT-MED,04 Feb 2022,—,—,AD5550,—,10:08,10:08,—,Unknown
+PT-MED,04 Feb 2022,Santarem (STM),Monte Alegre (MTE),AD5550,0:25,6:15,6:18,7:50,Landed 06:43
+PT-MED,04 Feb 2022,Belem (BEL),Santarem (STM),AD5467,2:14,2:40,2:40,5:15,Landed 04:54
+PT-MED,03 Feb 2022,Tucurui (TUR),Belem (BEL),AD5336,1:11,17:25,17:30,18:55,Landed 18:41
+PT-MED,03 Feb 2022,Belem (BEL),Tucurui (TUR),AD5335,1:11,15:30,15:40,17:00,Landed 16:51
+PT-MED,03 Feb 2022,Almeirim (MEU),Belem (BEL),AD5322,1:49,12:30,12:36,14:30,Landed 14:25
+PT-MED,03 Feb 2022,Belem (BEL),Almeirim (MEU),AD5321,1:36,10:20,10:15,12:05,Landed 11:51
+PT-MED,03 Feb 2022,Tucurui (TUR),Belem (BEL),AD5332,1:12,7:55,8:12,9:20,Landed 09:24
+PT-MED,03 Feb 2022,Belem (BEL),Tucurui (TUR),AD5331,1:05,6:00,6:11,7:30,Landed 07:17
+PT-MED,02 Feb 2022,Tucurui (TUR),Belem (BEL),AD5326,1:16,18:10,18:05,19:40,Landed 19:21
+PT-MED,02 Feb 2022,Belem (BEL),Tucurui (TUR),AD5325,1:12,16:15,16:16,17:45,Landed 17:28
+PT-MED,02 Feb 2022,—,—,AD5580,—,—,—,—,Unknown
+PT-OGP,09 Feb 2022,Arapongas (APX),Curitiba (CWB),AD5475,—,16:50,—,18:20,Scheduled
+PT-OGP,09 Feb 2022,Curitiba (CWB),Arapongas (APX),AD5474,—,14:45,—,16:25,Scheduled
+PT-OGP,09 Feb 2022,Jundiai (QDV),Belo Horizonte (PLU),AD5619,1:57,6:36,6:36,8:33,Landed 08:33
+PT-OGP,09 Feb 2022,Belo Horizonte (PLU),Jundiai (QDV),AD5618,1:48,3:28,3:28,5:16,Landed 05:16
+PT-OGP,09 Feb 2022,Jundiai (QDV),Belo Horizonte (PLU),AD5953,1:55,0:39,0:39,2:34,Landed 02:34
+PT-OGP,08 Feb 2022,Curitiba (CWB),Jundiai (QDV),AD5999,1:18,17:35,17:49,19:20,Landed 19:07
+PT-OGP,08 Feb 2022,Apucarana (APU),Curitiba (CWB),AD5479,1:12,15:30,15:27,16:50,Landed 16:39
+PT-OGP,08 Feb 2022,Curitiba (CWB),Apucarana (APU),AD5478,1:18,13:30,13:30,15:05,Landed 14:49
+PT-OGP,08 Feb 2022,Campo Mourão (CBW),Curitiba (CWB),AD5477,1:21,11:15,11:07,12:45,Landed 12:28
+PT-OGP,08 Feb 2022,Curitiba (CWB),Campo Mourão (CBW),AD5476,1:27,9:00,9:01,10:50,Landed 10:29
+PT-OGP,08 Feb 2022,Jundiai (QDV),Curitiba (CWB),AD5998,1:27,6:30,6:55,8:15,Landed 08:22
+PT-OGP,07 Feb 2022,Curitiba (CWB),Jundiai (QDV),AD5999,1:23,19:20,19:09,21:05,Landed 20:32
+PT-OGP,07 Feb 2022,Arapongas (APX),Curitiba (CWB),AD5475,1:12,16:50,16:43,18:20,Landed 17:55
+PT-OGP,07 Feb 2022,Curitiba (CWB),Arapongas (APX),AD5474,1:30,14:45,14:44,16:25,Landed 16:14
+PT-OGP,07 Feb 2022,Telêmaco Borba (TEC),Curitiba (CWB),AD5473,0:48,12:55,12:44,14:00,Landed 13:33
+PT-OGP,07 Feb 2022,Curitiba (CWB),Telêmaco Borba (TEC),AD5472,1:01,11:20,11:17,12:30,Landed 12:18
+PT-OGP,07 Feb 2022,Curitiba (CWB),Cianorte (GGH),AD5470,—,6:30,—,8:30,Canceled
+PT-OGP,06 Feb 2022,Apucarana (APU),Curitiba (CWB),AD5479,1:17,19:50,19:42,21:10,Landed 20:59
+PT-OGP,06 Feb 2022,Curitiba (CWB),Apucarana (APU),AD5478,1:08,17:50,17:46,19:25,Landed 18:55
+PT-OGP,06 Feb 2022,Arapongas (APX),Curitiba (CWB),AD5475,1:27,15:35,15:26,17:05,Landed 16:53
+PT-OGP,06 Feb 2022,Curitiba (CWB),Arapongas (APX),AD5474,—,13:30,13:28,15:10,Estimated departure 13:28
+PT-OGP,06 Feb 2022,Curitiba (CWB),—,AD5477,1:15,13:27,13:27,17:42,Landed 17:42
+PT-OGP,05 Feb 2022,Campo Mourão (CBW),Curitiba (CWB),AD5477,1:24,11:15,12:15,12:45,Landed 13:39
+PT-OGP,05 Feb 2022,Curitiba (CWB),Campo Mourão (CBW),AD5476,2:00,9:00,9:12,10:50,Landed 11:12
+PT-OGP,05 Feb 2022,Jundiai (QDV),Curitiba (CWB),AD5900,1:27,6:38,6:38,8:05,Landed 08:05
