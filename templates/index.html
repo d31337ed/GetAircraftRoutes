@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Routes Checker</title>
+</head>
+<body>
+<h1>LMAO Upper Text</h1>
+<h2>Input</h2>
+<form action="{{ url_for("index")}}" method="post">
+<label for="airline">Airline:   </label>
+<input type="text" id="airline" name="fname" placeholder="Enter airline code">
+<label for="aircraft">Aircraft Type: </label>
+<input type="text" id="aircraft" name="aircraft_type " placeholder="Enter code of aircraft">
+<button type="submit">YARRR</button>
+<h2>Planes: </h2>
+<div contentEditable="true">{{AircraftList}}</div>
+<h2>Routes:</h2>
+<div contentEditable="true">{{RoutesList}}</div>
+<h2>Map Link:</h2>
+<div><a href="{{GCMapLink}}" target="_blank" rel="noopener noreferrer">Click here to plot map</a>{{GCmapLink}}</div>
+</body>
+</html>

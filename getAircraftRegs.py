@@ -2,10 +2,10 @@ import requests
 import bs4
 
 
-def get_regs(airline_code, aircraft_type):
-    """Function is used to get list of Aircraft REG numbers of certain plane noticed last month by certain airline"""
-    header = {'User-Agent': 'PostmanRuntime/7.29.0'}
+def get_regs(airline_code: str, aircraft_type: str) -> list:
+    """Function is used to get list of Aircraft REG numbers of plane model noticed last month by certain airline"""
     # getting raw html from flightradar
+    header = {'User-Agent': 'PostmanRuntime/7.29.0'}
     raw_aircraft_data = requests.get('https://www.flightradar24.com/data/airlines/' + airline_code + '/fleet',
                                      headers=header).text
     # parsing HTML

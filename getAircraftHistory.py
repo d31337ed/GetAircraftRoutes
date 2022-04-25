@@ -7,15 +7,16 @@ import random
 
 def get_history(aircraft: str) -> list:
     """Provides routes history for aircraft REG specified in "aircraft" argument """
+    # requesting
     header = {'User-Agent': 'PostmanRuntime/7.29.0'}
     print('Fetching Aircraft Info: ' + aircraft)
     raw_aircraft_data = requests.get('https://www.flightradar24.com/data/aircraft/' + aircraft,
                                      headers=header).text
-
+    # parsing
     routes_soup = bs4.BeautifulSoup(raw_aircraft_data, 'html.parser')
 
     def get_destinations(key: str) -> list:
-        """Sub-function to extract airport code from label. "Key" must be "FROM" or "TO" """
+        """Sub-function to extract airport code from labels on page of Aircraft. "Key" must be "FROM" or "TO" """
         if key == "TO" or key == "FROM":
             raw_from_data = routes_soup.find_all('label', text=key)
             destinations = []

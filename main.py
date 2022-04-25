@@ -11,7 +11,9 @@ aircraftList = get_regs(airlineCode, aircraftType)
 total_routes = []
 for aircraft in aircraftList:
     total_routes.append(get_history(aircraft))
-total_routes = reduce(operator.iconcat, total_routes, [])  # flat string of unique routes for all aircrafts
+# TODO: show only UNIQUE routes
+total_routes = reduce(operator.iconcat, total_routes, [])  # flat string of routes for all aircrafts
+link = "http://www.gcmap.com/mapui?P" + ",".join(total_routes)
 
 print("Total found number of routes: ", len(total_routes))
-print(",".join(total_routes))
+print(link)
