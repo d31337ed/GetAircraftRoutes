@@ -1,18 +1,13 @@
 import requests
 import bs4
-from getAircraftRegs import get_regs
 import time
+from itertools import filterfalse
 # import random
+# TODO: сделать рандомный таймаут запросов
 
-airlineCode = 'ad-azu'
-aircraftType = 'C208'
-header = {'User-Agent': 'PostmanRuntime/7.29.0'}
-NumPlanesLimit = 10
 
-aircraftList = get_regs(airlineCode, aircraftType)
-print(aircraftList[0:NumPlanesLimit])
-# for aircraft in aircraftList:
-for aircraft in aircraftList[0:NumPlanesLimit]:
+def get_history(aircraft):
+    header = {'User-Agent': 'PostmanRuntime/7.29.0'}
     print('Fetching Aircraft Info: ' + aircraft[1:-1])
     raw_aircraft_data = requests.get('https://www.flightradar24.com/data/aircraft/' + aircraft[1:-1],
                                      headers=header).text
@@ -28,7 +23,6 @@ for aircraft in aircraftList[0:NumPlanesLimit]:
             froms.append('-')
         else:
             froms.append(fromAirport.text[1:-2])
-    print(froms)
 
     raw_TO_data = routes_soup.find_all('label', text='TO')
     tos = []
@@ -39,9 +33,11 @@ for aircraft in aircraftList[0:NumPlanesLimit]:
             tos.append('-')
         else:
             tos.append(toAirport.text[1:-2])
-    print(tos)
 
-    print(len(froms))
+    routes = [x + '-' + y for x, y in zip(froms, tos)]
+
+    # TODO: удалить все строки с тирешечками
+    print("Total: ", len(froms), " routes for Aircraft", aircraft)
     time.sleep(1)
 
-    # TODO: извлечь коды аэропортов (желательно, по ИАТА)
+    return routes

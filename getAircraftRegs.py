@@ -3,22 +3,22 @@ import bs4
 
 
 def get_regs(airline_code, aircraft_type):
+    """Function is used to get list of Aircraft REG numbers of certain plane noticed last month by certain airline"""
     header = {'User-Agent': 'PostmanRuntime/7.29.0'}
+    # getting raw html from flightradar
     raw_aircraft_data = requests.get('https://www.flightradar24.com/data/airlines/' + airline_code + '/fleet',
                                      headers=header).text
-
+    # parsing HTML
     aircraft_soup = bs4.BeautifulSoup(raw_aircraft_data, 'html.parser')
-    raw_cessna_data = aircraft_soup.find('div', text=aircraft_type).parent.next_sibling
-    cessna_regs_raw = raw_cessna_data.find_all('a')
-    cessna_regs = []
-    for aircraft in cessna_regs_raw:
+    # choosing block containing aircraft model code and extracting text from the next block
+    raw_data = aircraft_soup.find('div', text=aircraft_type).parent.next_sibling
+    reg_numbers_raw = raw_data.find_all('a')
+    # filling list of REG numbers
+    reg_numbers = []
+    for aircraft in reg_numbers_raw:
         if aircraft is not None:
-            cessna_regs.append(aircraft.string)
-#    if type(aircraft) != 'NoneType':
-#        aircraft = aircraft.replace(' ','')
-    cessna_regs = list(filter(None, cessna_regs))
+            reg_numbers.append(aircraft.string)
+    reg_numbers = list(filter(None, reg_numbers))
 
-    # TODO: убрать ебучие пробелы и вынести их обрезку из следующего метода
-    # print(type(cessnaRegs))
-    return cessna_regs
+    return reg_numbers
 
