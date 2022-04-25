@@ -18,7 +18,7 @@ def get_regs(airline_code, aircraft_type):
     for aircraft in reg_numbers_raw:
         if aircraft is not None:
             reg_numbers.append(aircraft.string)
-    reg_numbers = list(filter(None, reg_numbers))
+    reg_numbers = list(filter(None, reg_numbers))              # removing empty elements
+    reg_numbers = list(map(lambda x: x.strip(), reg_numbers))  # cutting spaces in the edges of REGs
 
     return reg_numbers
-

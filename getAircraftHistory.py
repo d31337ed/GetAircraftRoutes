@@ -2,42 +2,42 @@ import requests
 import bs4
 import time
 from itertools import filterfalse
-# import random
-# TODO: сделать рандомный таймаут запросов
+import random
 
 
-def get_history(aircraft):
+def get_history(aircraft: str) -> list:
+    """Provides routes history for aircraft REG specified in "aircraft" argument """
     header = {'User-Agent': 'PostmanRuntime/7.29.0'}
-    print('Fetching Aircraft Info: ' + aircraft[1:-1])
-    raw_aircraft_data = requests.get('https://www.flightradar24.com/data/aircraft/' + aircraft[1:-1],
+    print('Fetching Aircraft Info: ' + aircraft)
+    raw_aircraft_data = requests.get('https://www.flightradar24.com/data/aircraft/' + aircraft,
                                      headers=header).text
 
     routes_soup = bs4.BeautifulSoup(raw_aircraft_data, 'html.parser')
 
-    raw_from_data = routes_soup.find_all('label', text='FROM')
-    froms = []
-    for route in raw_from_data:
-        fromTag = route.parent
-        fromAirport = fromTag.findChild('a')
-        if fromAirport is None:
-            froms.append('-')
+    def get_destinations(key: str) -> list:
+        """Sub-function to extract airport code from label. "Key" must be "FROM" or "TO" """
+        if key == "TO" or key == "FROM":
+            raw_from_data = routes_soup.find_all('label', text=key)
+            destinations = []
+            for route in raw_from_data:
+                fromTag = route.parent
+                fromAirport = fromTag.findChild('a')
+                if fromAirport is None:
+                    destinations.append('-')
+                else:
+                    destinations.append(fromAirport.text[1:-2])
+            return destinations
         else:
-            froms.append(fromAirport.text[1:-2])
+            raise ValueError
 
-    raw_TO_data = routes_soup.find_all('label', text='TO')
-    tos = []
-    for route in raw_TO_data:
-        toTag = route.parent
-        toAirport = toTag.findChild('a')
-        if toAirport is None:
-            tos.append('-')
-        else:
-            tos.append(toAirport.text[1:-2])
+    froms = get_destinations('FROM')
+    tos = get_destinations('TO')
 
-    routes = [x + '-' + y for x, y in zip(froms, tos)]
+    routes = [x + '-' + y for x, y in zip(froms, tos)]  # uniting destinations into routes ("FROM, "TO" -> "FROM-TO")
+    routes = list(map(lambda s: s.strip("--"), routes))  # removing empty and semi-empty routes
+    routes[:] = [x for x in routes if x]                # cleaning empty elements from list
 
-    # TODO: удалить все строки с тирешечками
     print("Total: ", len(froms), " routes for Aircraft", aircraft)
-    time.sleep(1)
+    time.sleep(random.randrange(3, 8)/10)
 
     return routes
