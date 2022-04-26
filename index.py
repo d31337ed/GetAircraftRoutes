@@ -7,6 +7,7 @@ import operator
 app = Flask(__name__, template_folder='templates')
 # TODO: показывать прогресс
 
+
 @app.route('/', methods=["GET", "POST"])
 def index():
     if request.method == "POST":
