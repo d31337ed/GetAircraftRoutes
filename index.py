@@ -1,5 +1,6 @@
 from getAircraftRegs import get_regs
 from getAircraftHistory import get_history
+from getFleet import get_fleet
 from flask import Flask, render_template, request
 from functools import reduce
 import operator
@@ -13,7 +14,14 @@ def index():
     if request.method == "POST":
         # reading inputs
         airline_code = request.form.get("airline")
-        aircraft_type = request.form.get("aircraft_type ")
+        aircraft_type = request.form.get("aircraft_type ").upper()
+        if aircraft_type == '':
+            fleet = get_fleet(airline_code)
+            fleet_string = '''Okay, here's the list of aircraft types for "''' \
+                           + airline_code.upper() + '" airline: ' + ', '.join(fleet)
+            return render_template("index.html",
+                                   FleetList=fleet_string,
+                                   LinkText="Enter aircraft model to get link")
         # parsing reg numbers of aircrafts
         planes = get_regs(airline_code, aircraft_type)
         # constructing list of lists of routes
@@ -21,11 +29,12 @@ def index():
         for aircraft in planes:
             total_routes.append(get_history(aircraft))
         total_routes = set(reduce(operator.iconcat, total_routes, []))  # list of unique routes among all aircrafts
-        link = "http://www.gcmap.com/mapui?P=" + ",".join(total_routes)  # generating GCMap link
+        link = "http://www.gcmap.com/mapui?P=" + ','.join(total_routes)  # generating GCMap link
         return render_template("index.html",
                                AircraftList=", ".join(planes),
                                RoutesList=", ".join(total_routes),
-                               GCMapLink=link)
+                               GCMapLink=link,
+                               LinkText="Click here to plot map")
 
     return render_template("index.html")
 
