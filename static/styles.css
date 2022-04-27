@@ -13,9 +13,6 @@ h1 {
 
 h2 {
     font-family: "Helvetica Neue"; size: 5em;
-}
-
-h2 {
     color: #FFFAFA
 }
 
@@ -26,8 +23,8 @@ body {
 
 input {
     border: 3px solid #555;
-    width: 30%;
     height: 3em;
+    width: 100%;
 }
 
 input:focus {
@@ -38,18 +35,28 @@ label {
     font-family: "Helvetica Neue"; font-size: 1.5em; color: #FFFAFA
 }
 
-result {
-    font-family: "Helvetica Neue"; color: #FFFAFA
+.result {
+    font-family: "Helvetica Neue"; font-color: #FFFAFA
 }
 
-placeholder {
-    font-size:3em;
+.placeholder {
+    font-size:2em;
 }
 
 button {
-    width: 95%;
+    width: 100%;
     align: center;
     background-color: #dbcf72;
     height: 3em;
     border-radius: 6px;
+}
+
+table{
+    width:100%;
+}
+table td{
+    white-space: nowrap;
+}
+table td:last-child{
+    width:100%;
 }
