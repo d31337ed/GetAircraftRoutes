@@ -24,7 +24,7 @@ body {
 input {
     border: 3px solid #555;
     height: 3em;
-    width: 100%;
+    width: 98%;
 }
 
 input:focus {
