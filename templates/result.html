@@ -22,6 +22,7 @@
              <option value="{{airline_title}}">{{airline_title}}</option>
                 {% endfor %}
         </select>
+    </td>
     </tr>
     <tr>
     <td><label for="aircraft">Aircraft Type: </label></td>
@@ -33,5 +34,13 @@
     </tbody>
     </table>
     </form>
+
+<div>{{FleetList}}</div>
+<h2>Planes: </h2>
+<div class="result" >{{AircraftList}}</div>
+<h2>Routes:</h2>
+<div class="result" >{{RoutesList}}</div>
+<h2>Map Link:</h2>
+<div class="result"><a href="{{GCMapLink}}" target="_blank" rel="noopener noreferrer">{{LinkText}}</a></div>
 </body>
 </html>

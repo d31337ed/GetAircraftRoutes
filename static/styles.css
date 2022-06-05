@@ -32,11 +32,11 @@ input:focus {
 }
 
 label {
-    font-family: "Helvetica Neue"; font-size: 1.5em; color: #FFFAFA
+    font-family: "Helvetica Neue", serif; font-size: 1.5em; color: #FFFAFA
 }
 
 .result {
-    font-family: "Helvetica Neue"; font-color: #FFFAFA
+    font-family: "Helvetica Neue", serif; font-color: #FFFAFA
 }
 
 .placeholder {
