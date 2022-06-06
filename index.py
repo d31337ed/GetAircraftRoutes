@@ -15,14 +15,15 @@ def index():
     airline_titles = list(airlines.keys())
     if request.method == "POST":
         # reading inputs
-        input = request.form.get("airline")
-        airline_link = airlines[input]
+        chosen_airline = request.form.get("airline")
+        airline_link = airlines[chosen_airline]
         aircraft_type = request.form.get("aircraft_type ").upper()
         if aircraft_type == '':
             fleet = get_fleet(airline_link)
             fleet_string = '''Okay, here's a list of aircraft types for ''' \
-                           + input + ': ' + ', '.join(fleet)
+                           + chosen_airline + ': ' + ', '.join(fleet)
             return render_template("result.html",
+                                   chosen_airline=chosen_airline,
                                    airline_titles=airline_titles,
                                    FleetList=fleet_string,
                                    LinkText="Enter aircraft model to get link")
@@ -35,11 +36,12 @@ def index():
         total_routes = set(reduce(operator.iconcat, total_routes, []))  # list of unique routes among all aircrafts
         link = "http://www.gcmap.com/mapui?P=" + ','.join(total_routes)  # generating GCMap link
         return render_template("result.html",
+                               chosen_airline=chosen_airline,
                                airline_titles=airline_titles,
                                AircraftList=", ".join(planes),
                                RoutesList=", ".join(total_routes),
                                GCMapLink=link,
-                               LinkText="Click here to plot map",)
+                               LinkText="Click here to plot map")
 
     return render_template("index.html", airline_titles=airline_titles)
 

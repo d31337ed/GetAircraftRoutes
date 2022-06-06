@@ -27,6 +27,12 @@ input {
     width: 98%;
 }
 
+select {
+    border: 3px solid #555;
+    height: 3em;
+    width: 100%;
+}
+
 input:focus {
   border: 3px solid #FFFAAA;
 }

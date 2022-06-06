@@ -17,7 +17,7 @@
     <td><label for="airline">Airline:</label></td>
     <td>
         <select name="airline" method="GET" action="/">
-             <option value="{{airline_titles[0]}}" selected>{{airline_titles[0]}}</option>
+             <option value="{{chosen_airline}}" selected="selected" >{{chosen_airline}}</option>
                 {% for airline_title in airline_titles[1:] %}
              <option value="{{airline_title}}">{{airline_title}}</option>
                 {% endfor %}
