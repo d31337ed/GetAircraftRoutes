@@ -16,7 +16,7 @@
     <tr>
     <td><label for="airline">Airline:</label></td>
     <td>
-        <select name="airline" method="GET" action="/">
+        <select id="airline" name="airline">
              <option value="{{chosen_airline}}" selected="selected" >{{chosen_airline}}</option>
                 {% for airline_title in airline_titles[1:] %}
              <option value="{{airline_title}}">{{airline_title}}</option>
@@ -35,7 +35,21 @@
     </table>
     </form>
 
-<div>{{FleetList}}</div>
+<div id="Fleet">
+    <p>Okay, here's a list of aircraft types:</p>
+    {% for plane in fleet %}
+    <button class="planeButton" id="{{plane}}">{{plane}}</button>
+    {% endfor %}
+    <script>
+          const buttons = document.querySelectorAll(".planeButton");
+          buttons.forEach(function (item, index) {
+              item.addEventListener('click', function(){
+                  let chosen_aircraft = this.innerText;
+                  document.getElementById('aircraft').value=chosen_aircraft
+            });
+        });
+    </script>
+</div>
 <h2>Planes: </h2>
 <div class="result" >{{AircraftList}}</div>
 <h2>Routes:</h2>

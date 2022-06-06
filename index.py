@@ -16,16 +16,15 @@ def index():
     if request.method == "POST":
         # reading inputs
         chosen_airline = request.form.get("airline")
+        print(chosen_airline)
         airline_link = airlines[chosen_airline]
         aircraft_type = request.form.get("aircraft_type ").upper()
         if aircraft_type == '':
             fleet = get_fleet(airline_link)
-            fleet_string = '''Okay, here's a list of aircraft types for ''' \
-                           + chosen_airline + ': ' + ', '.join(fleet)
             return render_template("result.html",
                                    chosen_airline=chosen_airline,
                                    airline_titles=airline_titles,
-                                   FleetList=fleet_string,
+                                   fleet=fleet,
                                    LinkText="Enter aircraft model to get link")
         # parsing reg numbers of aircrafts
         planes = get_regs(airline_link, aircraft_type)
