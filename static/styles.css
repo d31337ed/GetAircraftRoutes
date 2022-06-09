@@ -57,6 +57,14 @@ button {
     border-radius: 6px;
 }
 
+.planeButton {
+    width: 15%;
+    align: center;
+    background-color: #12dec6;
+    height: 2em;
+    border-radius: 15px;
+}
+
 table{
     width:100%;
 }

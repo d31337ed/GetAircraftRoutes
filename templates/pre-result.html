@@ -7,11 +7,11 @@
 </head>
 <body>
 <h1>Aircraft Routes Visualiser v.0.2</h1>
-<h2>Step 1. Choose an airline from list:</h2>
 <form action="{{ url_for('index')}}" method="post">
     <table width="90%">
     <tbody>
     <tr>
+        <h2>Step 1. Choose an airline from list:</h2>
     <td><label for="airline">Airline:</label></td>
     <td>
         <select id="airline" name="airline">
@@ -23,11 +23,11 @@
     </td>
     </tr>
     <tr>
-    <td style="width: 100%;" colspan="2"><button type="submit">Select Airline</button></td>
+    <td style="width: 100%" colspan="2"><button type="submit">Select Airline</button></td>
     </tr>
-   <tr>
-        <td style="width: 100%;" colspan="2">
-            <h2>Step 2. Choose an aircraft from list:</h2>
+    <tr>
+        <td style="width: 100%" colspan="2">
+            <h2>Step 2. Choose an aircraft from {{airline_title}} fleet:</h2>
             {% for plane in fleet %}
             <button class="planeButton" id="{{plane}}">{{plane}}</button>
             {% endfor %}
@@ -42,22 +42,15 @@
             </script>
         </td>
     </tr>
+    <tr>
     <td><label for="aircraft">Aircraft Type: </label></td>
     <td><input type="text" id="aircraft" name="aircraft_type" placeholder="Select Aircraft from list above"></td>
     </tr>
     <tr>
-    <td style="width: 100%;" colspan="2">
-        <button type="submit">Get routes</button>
-    </td>
+    <td style="width: 100%" colspan="2"><button type="submit">Get Routes</button></td>
     </tr>
     </tbody>
     </table>
     </form>
-<h2>Planes: </h2>
-<div class="result" >{{AircraftList}}</div>
-<h2>Routes:</h2>
-<div class="result" >{{RoutesList}}</div>
-<h2>Map Link:</h2>
-<div class="result"><a href="{{GCMapLink}}" target="_blank" rel="noopener noreferrer">{{LinkText}}</a></div>
 </body>
 </html>

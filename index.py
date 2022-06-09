@@ -16,12 +16,11 @@ def index():
     if request.method == "POST":
         # reading inputs
         chosen_airline = request.form.get("airline")
-        print(chosen_airline)
         airline_link = airlines[chosen_airline]
-        aircraft_type = request.form.get("aircraft_type ").upper()
-        if aircraft_type == '':
-            fleet = get_fleet(airline_link)
-            return render_template("result.html",
+        aircraft_type = request.form.get("aircraft_type")
+        fleet = get_fleet(airline_link)
+        if aircraft_type is None:
+            return render_template("pre-result.html",
                                    chosen_airline=chosen_airline,
                                    airline_titles=airline_titles,
                                    fleet=fleet,
@@ -40,6 +39,7 @@ def index():
                                AircraftList=", ".join(planes),
                                RoutesList=", ".join(total_routes),
                                GCMapLink=link,
+                               fleet=fleet,
                                LinkText="Click here to plot map")
 
     return render_template("index.html", airline_titles=airline_titles)

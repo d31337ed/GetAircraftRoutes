@@ -6,15 +6,20 @@
     <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
-<h1>LMAO Upper Text</h1>
-<h2>Input</h2>
+<h1>Aircraft Routes Visualiser v.0.2</h1>
 <form action="{{ url_for('index')}}" method="post">
     <table width="90%">
     <tbody>
-    <col >
-    <col>
     <tr>
-    <td><label for="airline">Airline:</label></td>
+        <h2>Step 1. Choose an airline from list:</h2>
+    <td><label for="airline">Airline:</label></td><td>
+        <select id="airline" name="airline">
+             <option value="{{chosen_airline}}" selected="selected" >{{chosen_airline}}</option>
+                {% for airline_title in airline_titles[1:] %}
+             <option value="{{airline_title}}">{{airline_title}}</option>
+                {% endfor %}
+        </select>
+    </td>
     <td>
         <select name="airline" method="GET" action="/">
              <option value="" selected="selected" hidden="hidden">Choose Airline to start</option>
@@ -24,11 +29,7 @@
         </select>
     </tr>
     <tr>
-    <td><label for="aircraft">Aircraft Type: </label></td>
-    <td><input type="text" id="aircraft" name="aircraft_type " placeholder="Enter code of aircraft (leave empty to see options)"></td>
-    </tr>
-    <tr>
-    <td style="width: 100%;" colspan="2"><button type="submit">YARRR</button></td>
+    <td style="width: 100%;" colspan="2"><button type="submit">Select Airline</button></td>
     </tr>
     </tbody>
     </table>
