@@ -12,16 +12,9 @@
     <tbody>
     <tr>
         <h2>Step 1. Choose an airline from list:</h2>
-    <td><label for="airline">Airline:</label></td><td>
-        <select id="airline" name="airline">
-             <option value="{{chosen_airline}}" selected="selected" >{{chosen_airline}}</option>
-                {% for airline_title in airline_titles[1:] %}
-             <option value="{{airline_title}}">{{airline_title}}</option>
-                {% endfor %}
-        </select>
-    </td>
+    <td><label for="airline">Airline:</label></td>
     <td>
-        <select name="airline" method="GET" action="/">
+        <select id="airline" method="GET" action="/">
              <option value="" selected="selected" hidden="hidden">Choose Airline to start</option>
                 {% for airline_title in airline_titles %}
              <option value="{{airline_title}}">{{airline_title}}</option>
