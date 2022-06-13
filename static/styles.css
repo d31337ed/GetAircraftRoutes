@@ -2,23 +2,31 @@ html {
     background: rgb(131, 58, 180);
     background: linear-gradient(155deg, rgba(131, 58, 180, 1) 17%, rgba(193, 75, 31, 1) 75%, rgba(252, 176, 69, 1) 100%);
     height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body {
+    margin-left: 20%;
+    margin-right: 30%;
+    height: 100%;
 }
 
 h1 {
-    font-family: "Helvetica Neue";
+    font-family: "Helvetica Neue", serif;
     size: 7em;
     color: #FFFAFA;
     text-align: center;
 }
 
 h2 {
-    font-family: "Helvetica Neue"; size: 5em;
+    font-family: "Helvetica Neue", serif; size: 5em;
     color: #FFFAFA
 }
 
-body {
-    margin-left: 20%;
-    margin-right: 30%;
+h3 {
+    font-family: "Helvetica Neue", serif; size: 4em;
+    color: #FFFAFA
 }
 
 input {
@@ -41,7 +49,7 @@ label {
     font-family: "Helvetica Neue", serif; font-size: 1.5em; color: #FFFAFA
 }
 
-.result {
+#result {
     font-family: "Helvetica Neue", serif; font-color: #FFFAFA
 }
 
@@ -55,7 +63,9 @@ button {
     background-color: #dbcf72;
     height: 3em;
     border-radius: 6px;
+    font-weight: bold;
 }
+
 
 .planeButton {
     width: 15%;
@@ -65,12 +75,18 @@ button {
     border-radius: 15px;
 }
 
+.btnwrap {
+    width: 100%;
+}
+
 table{
     width:100%;
 }
+
 table td{
     white-space: nowrap;
 }
+
 table td:last-child{
-    width:100%;
+    width: 100%;
 }

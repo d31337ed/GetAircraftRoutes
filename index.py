@@ -37,6 +37,7 @@ def index():
                                chosen_airline=chosen_airline,
                                airline_titles=airline_titles,
                                AircraftList=", ".join(planes),
+                               chosen_aircraft=aircraft_type,
                                RoutesList=", ".join(total_routes),
                                GCMapLink=link,
                                fleet=fleet,
