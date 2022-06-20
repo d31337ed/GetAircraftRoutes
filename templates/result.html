@@ -12,9 +12,9 @@
     <table width="100%">
     <tbody>
     <tr>
-    <td><label for="airline">Airline:</label></td>
+    <td><label for="airline" name="airline">Airline:</label></td>
     <td>
-        <select id="airline" name="airline">
+        <select id="airline" name="airline" method="GET" action="/">
              <option value="{{chosen_airline}}" selected="selected" >{{chosen_airline}}</option>
                 {% for airline_title in airline_titles[1:] %}
              <option value="{{airline_title}}">{{airline_title}}</option>
