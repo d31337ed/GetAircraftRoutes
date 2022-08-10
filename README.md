@@ -57,7 +57,7 @@ Clone the project
 
 - Catch exeptions after temporarily ban by flightradar. Add adaptive time-out for outcome requests. 
 
-- 
+- Cache list of airlines in local storage and occasionaly update it by schedule
 
 - Add text filtering in airline selector
 
