@@ -7,6 +7,8 @@ A small web-app to find out routes operating by certain aircraft types by certai
 
 https://airoutes.de1337ed.ru/
 
+<img width="600" alt="Screenshot 2022-08-10 at 20 02 50" src="https://user-images.githubusercontent.com/75523805/183973410-f6f9871c-a5c3-456d-92f5-d8c070d6ba1f.png">
+
 ## 🛠 Tech Stack
 
 **Back:** Python 3.9, Flask, requests, bs4
@@ -54,6 +56,8 @@ Clone the project
 ## 🛣 Roadmap
 
 - Catch exeptions after temporarily ban by flightradar. Add adaptive time-out for outcome requests. 
+
+- 
 
 - Add text filtering in airline selector
 
