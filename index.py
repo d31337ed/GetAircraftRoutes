@@ -4,14 +4,15 @@ from getFleet import get_fleet
 from getAirlinesList import get_airlines
 from flask import Flask, render_template, request, redirect, url_for
 from functools import reduce
-import operator
+import operator, json
 
 app = Flask(__name__, template_folder='templates')
 
 
 @app.route('/', methods=["GET", "POST"])
 def index():
-    airlines = get_airlines()
+    # airlines = get_airlines()
+    airlines = json.load(open("airlines.json"))
     airline_titles = list(airlines.keys())
     if request.method == "POST":
         # reading inputs
