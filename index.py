@@ -1,11 +1,13 @@
 import json
 import operator
+import os
 from functools import reduce
 from flask import Flask, render_template, request, redirect, url_for
 from getAircraftHistory import get_history
 from getAircraftRegs import get_regs
-from getAirlinesList import get_airlines
+# from getAirlinesList import get_airlines
 from getFleet import get_fleet
+from datetime import datetime
 
 app = Flask(__name__, template_folder='templates')
 
@@ -15,6 +17,8 @@ def index():
     # airlines = get_airlines()
     airlines = json.load(open("airlines.json"))
     airline_titles = list(airlines.keys())
+    raw_update_timestamp = os.path.getmtime("airlines.json")
+    list_timestamp = datetime.fromtimestamp(raw_update_timestamp).strftime('%Y-%m-%d %H:%M:%S')
     if request.method == "POST":
         # reading inputs
         chosen_airline = request.form.get("airline")
@@ -45,7 +49,9 @@ def index():
                                fleet=fleet,
                                LinkText="Click here to plot map")
 
-    return render_template("index.html", airline_titles=airline_titles)
+    return render_template("index.html",
+                           airline_titles=airline_titles,
+                           allist_timestamp=list_timestamp)
 
 
 if __name__ == '__main__':

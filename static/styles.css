@@ -10,6 +10,9 @@ body {
     margin-left: 20%;
     margin-right: 30%;
     height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -90,3 +93,18 @@ table td{
 table td:last-child{
     width: 100%;
 }
+
+.site-footer {
+    height: 30px;
+    margin-left: -40%;
+    margin-right: -60%;
+    margin-top: auto;
+    background-color: #FFFAFA;
+}
+
+.timestamp {
+    font-family: "Helvetica Neue", serif; font-size: 0.9em;
+    padding-left: 5px;
+    vertical-align: middle;
+}
+
