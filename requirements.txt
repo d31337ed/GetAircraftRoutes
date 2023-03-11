@@ -23,7 +23,6 @@ gast==0.4.0
 google-auth==1.32.0
 google-auth-oauthlib==0.4.4
 google-pasta==0.2.0
-grpcio==1.34.1
 gunicorn
 h5py
 huggingface-hub==0.0.12
