@@ -12,14 +12,14 @@ def get_airlines():
     airlines_soup = bs4.BeautifulSoup(raw_aircraft_data, 'html.parser')
     raw_airlines_data = airlines_soup.find_all("td", {"class": "notranslate"})  # getting strings with airline data
     titles = []
-    links = []
+    codes = []
     for raw_airline in raw_airlines_data:
         titles.append(raw_airline.find("a")['title'])
-        links.append(raw_airline.find("a")['href'])
-    airlines = dict(zip(titles, links))
+        codes.append(raw_airline.find("a")['href'].replace('/data/airlines/',''))
+    airlines = dict(zip(titles, codes))
     with open('airlines.json', 'w') as file:
         file.write(json.dumps(airlines))
-    # return airlines
+    return json.dumps(airlines)
 
 
 get_airlines()
