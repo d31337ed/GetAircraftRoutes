@@ -13,13 +13,22 @@ def get_airlines():
     raw_airlines_data = airlines_soup.find_all("td", {"class": "notranslate"})  # getting strings with airline data
     titles = []
     codes = []
+    select_list = []
     for raw_airline in raw_airlines_data:
-        titles.append(raw_airline.find("a")['title'])
-        codes.append(raw_airline.find("a")['href'].replace('/data/airlines/',''))
-    airlines = dict(zip(titles, codes))
+        current_title = raw_airline.find("a")['title']
+        titles.append(current_title)
+        current_code = raw_airline.find("a")['href'].replace('/data/airlines/','')
+        codes.append(current_code)
+        select_list.append({"id": current_code, "text": current_title})
+
+    print(json.dumps({'results': select_list}))
+
+    airlines = [codes, titles]
+#    print(airlines)
     with open('airlines.json', 'w') as file:
-        file.write(json.dumps(airlines))
-    return json.dumps(airlines)
+        file.write(json.dumps({'results': select_list}))
+#    return json.dumps(airlines)
+#    return airlines
 
 
-get_airlines()
+print(get_airlines())

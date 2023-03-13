@@ -8,7 +8,7 @@ from getAircraftHistory import get_history
 from getAircraftRegs import get_regs
 from getFleet import get_fleet
 from datetime import datetime
-from getAirlinesList import get_airlines
+#from getAirlinesList import get_airlines
 
 app = FastAPI()
 
@@ -20,8 +20,16 @@ def homepage():
 
 @app.get('/airlines/')
 def get_airlines_list():
-    return get_airlines()
+    airlines = json.load(open("airlines.json"))
+#    airline_titles = list(airlines.keys())
+    return airlines
 
+
+@app.get('/airlines/timestamp')
+def get_airlines_timestamp():
+    raw_update_timestamp = os.path.getmtime("airlines.json")
+    list_timestamp = datetime.fromtimestamp(raw_update_timestamp).strftime('%Y-%m-%d %H:%M:%S')
+    return list_timestamp
 
 @app.get('/airlines/{airline_code}/fleet/')
 async def get_aircrafts_list(airline_code: str):
