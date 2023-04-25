@@ -3,25 +3,38 @@ import operator
 import os
 from fastapi import FastAPI
 from functools import reduce
-from flask import Flask, render_template, request, redirect, url_for
+# from flask import Flask, render_template, request, redirect, url_for
 from getAircraftHistory import get_history
 from getAircraftRegs import get_regs
 from getFleet import get_fleet
 from datetime import datetime
-#from getAirlinesList import get_airlines
+from fastapi.responses import HTMLResponse
+from fastapi.staticfiles import StaticFiles
+
 
 app = FastAPI()
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
 
-@app.get('/')
+@app.get('/', response_class=HTMLResponse)
 def homepage():
-    return "HomePage template"
+    with open(os.path.join(os.getcwd(), 'templates/result-API.html')) as fh:
+        data = fh.read()
+    return HTMLResponse(content=data, media_type="text/html")
 
 
 @app.get('/airlines/')
-def get_airlines_list():
+def get_airlines_list(q: str | None = None):
     airlines = json.load(open("airlines.json"))
-#    airline_titles = list(airlines.keys())
+    if q:
+        airlines_list = airlines['results']
+        filtered_airlines = []
+        for airline in airlines_list:
+            if q.upper() in airline["text"].upper():
+                filtered_airlines.append(airline)
+        query_result = '{"results": ' + json.dumps(filtered_airlines) + '}'
+        print(query_result)
+        return json.loads(query_result)
     return airlines
 
 
@@ -58,4 +71,4 @@ async def get_routes(airline_code: str, aircraft_code: str):
 #    raw_update_timestamp = os.path.getmtime("airlines.json")
 #    list_timestamp = datetime.fromtimestamp(raw_update_timestamp).strftime('%Y-%m-%d %H:%M:%S')
 
-#        link = "http://www.gcmap.com/mapui?P=" + ','.join(total_routes)  # generating GCMap link
+#    link = "http://www.gcmap.com/mapui?P=" + ','.join(total_routes)  # generating GCMap link

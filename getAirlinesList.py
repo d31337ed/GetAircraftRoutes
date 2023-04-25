@@ -21,12 +21,10 @@ def get_airlines():
         codes.append(current_code)
         select_list.append({"id": current_code, "text": current_title})
 
-    print(json.dumps({'results': select_list}))
-
     airlines = [codes, titles]
 #    print(airlines)
     with open('airlines.json', 'w') as file:
-        file.write(json.dumps({'results': select_list}))
+        file.write('{"results": ' + json.dumps(select_list) + '}')
 #    return json.dumps(airlines)
 #    return airlines
 
