@@ -17,16 +17,13 @@ def get_airlines():
     for raw_airline in raw_airlines_data:
         current_title = raw_airline.find("a")['title']
         titles.append(current_title)
-        current_code = raw_airline.find("a")['href'].replace('/data/airlines/','')
+        current_code = raw_airline.find("a")['href'].replace('/data/airlines/', '')
         codes.append(current_code)
         select_list.append({"id": current_code, "text": current_title})
 
-    airlines = [codes, titles]
-#    print(airlines)
+    #    airlines = [codes, titles]
     with open('airlines.json', 'w') as file:
         file.write('{"results": ' + json.dumps(select_list) + '}')
-#    return json.dumps(airlines)
-#    return airlines
 
 
 print(get_airlines())

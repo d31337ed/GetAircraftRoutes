@@ -7,31 +7,39 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-
 </head>
 <body>
 <h1>Aircraft Routes Visualiser v.0.3</h1>
 <h2>Step 1. Choose an airline from list:</h2>
-<form action="{{ url_for('index')}}" method="post">
+
     <table width="100%">
     <tbody>
     <tr>
     <td><label for="airline" name="airline">Airline:</label></td>
     <td>
-        <select class="airline-selector" style="width: 100%"></select>
+        <select id="airline-selector" class="airline-selector" style="width: 100%"></select>
         <script type="text/javascript">
             $('.airline-selector').select2({
-  ajax: {
-    url: '/airlines',
-    dataType: 'json'
-  }
-});
+                ajax: {
+                url: '/airlines',
+                dataType: 'json'
+                }
+            });
         </script>
     </td>
     </tr>
     <tr>
     <td style="width: 100%;" colspan="2">
-        <button type="submit">Select Airline</button>
+        <button type="submit" onclick="selectAirline()">Select Airline</button>
+        <script>
+            function selectAirline() {
+                var selectList = document.getElementById('airline-selector');
+                var value = selectList.options[selectList.selectedIndex].value;
+                console.log(value);
+                var txt = selectList.options[selectList.selectedIndex].text;
+                console.log(txt);
+                }
+        </script>
     </td>
     </tr>
    <tr>
@@ -61,7 +69,7 @@
     </tr>
     </tbody>
     </table>
-    </form>
+
 <h2>Step 3. Enjoy the result:</h2>
 <h3>Planes: </h3>
 <div class="result" >{{AircraftList}}</div>
@@ -69,5 +77,18 @@
 <div class="result" >{{RoutesList}}</div>
 <h3>Map Link for routes operated last week on {{chosen_aircraft}} by {{chosen_airline}}:</h3>
 <div class="result"><a href="{{GCMapLink}}" target="_blank" rel="noopener noreferrer">{{LinkText}}</a></div>
+    <footer class="site-footer">
+        <span id="timestamp">Airlines List updated on </span>
+        <script>
+        fetch('/airlines/timestamp/')
+                .then((response) => {
+                return response.json();
+                })
+                .then((data) => {
+                console.log(data);
+                document.getElementById("timestamp").innerHTML = '  Airlines List updated on ' + data;
+                });
+        </script>
+    </footer>
 </body>
 </html>

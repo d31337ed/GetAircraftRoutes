@@ -11,13 +11,13 @@ from datetime import datetime
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 
-
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 
 @app.get('/', response_class=HTMLResponse)
 def homepage():
+    """Method returns main HTML file with all corresponding frontend logic"""
     with open(os.path.join(os.getcwd(), 'templates/result-API.html')) as fh:
         data = fh.read()
     return HTMLResponse(content=data, media_type="text/html")
@@ -25,37 +25,52 @@ def homepage():
 
 @app.get('/airlines/')
 def get_airlines_list(q: str | None = None):
+    """Method returns list of airlines for dropdown menu. Also returns filtered list for search (if 'q is passed')"""
+    # Reading cached list of airlines
     airlines = json.load(open("airlines.json"))
     if q:
+        # if q param is passed - method returns filtered list of airlines for Dropdown element
         airlines_list = airlines['results']
         filtered_airlines = []
+        # Filtering loop:
         for airline in airlines_list:
+            # Conversion to upper case is made to make search registry independent
             if q.upper() in airline["text"].upper():
                 filtered_airlines.append(airline)
+        # conversion of filtered list to format expected by Select2 Dropdown element
         query_result = '{"results": ' + json.dumps(filtered_airlines) + '}'
-        print(query_result)
         return json.loads(query_result)
+    # if q is not passed - method returns a full list of airlines for Dropdown element
     return airlines
 
 
 @app.get('/airlines/timestamp')
 def get_airlines_timestamp():
+    """Method returns time of last  caching of airlines list"""
+    # As it is cached in a file, we are just reading last modification time
     raw_update_timestamp = os.path.getmtime("airlines.json")
+    # Conversion of timestamp to human-readable format
     list_timestamp = datetime.fromtimestamp(raw_update_timestamp).strftime('%Y-%m-%d %H:%M:%S')
     return list_timestamp
 
+
 @app.get('/airlines/{airline_code}/fleet/')
 async def get_aircrafts_list(airline_code: str):
+    """Method returns list of aircraft types for certain airline"""
     return get_fleet(airline_code)
 
 
 @app.get('/airlines/{airline_code}/fleet/{aircraft_code}/regs/')
 async def get_aircrafts_regs(airline_code: str, aircraft_code: str):
+    """Method returns list of Reg. ID's of certain airline for certain aircraft type"""
     return get_regs(airline_code, aircraft_code)
 
 
 @app.get('/airlines/{airline_code}/fleet/{aircraft_code}/routes/')
+# Разве мы не должны передавать в этот метод список самолётов?
 async def get_routes(airline_code: str, aircraft_code: str):
+    """Method returns list of routes for given list of aircraft"""
+    # А зачем? Разве мы не должны получать на вход именно список самолётов??
     planes = get_regs(airline_code, aircraft_code)
     print(planes)
     # constructing list of lists of routes
@@ -63,12 +78,7 @@ async def get_routes(airline_code: str, aircraft_code: str):
     for aircraft in planes:
         total_routes.append(get_history(aircraft))
     total_routes = set(reduce(operator.iconcat, total_routes, []))  # list of unique routes among all aircrafts
+    # Может, вынести генерацию  ссылки в отдельный метод?
     link = "http://www.gcmap.com/mapui?P=" + ','.join(total_routes)  # generating GCMap link
     print(link)
     return total_routes
-
-
-#    raw_update_timestamp = os.path.getmtime("airlines.json")
-#    list_timestamp = datetime.fromtimestamp(raw_update_timestamp).strftime('%Y-%m-%d %H:%M:%S')
-
-#    link = "http://www.gcmap.com/mapui?P=" + ','.join(total_routes)  # generating GCMap link
