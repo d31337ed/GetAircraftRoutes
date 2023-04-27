@@ -15,7 +15,7 @@
     <table width="100%">
     <tbody>
     <tr>
-    <td><label for="airline" name="airline">Airline:</label></td>
+    <td><label for="airline-selector" name="airline">Airline:</label></td>
     <td>
         <select id="airline-selector" class="airline-selector" style="width: 100%"></select>
         <script type="text/javascript">
@@ -33,12 +33,17 @@
         <button type="submit" onclick="selectAirline()">Select Airline</button>
         <script>
             function selectAirline() {
-                var selectList = document.getElementById('airline-selector');
-                var value = selectList.options[selectList.selectedIndex].value;
+                let selectList = document.getElementById('airline-selector');
+                let value = selectList.options[selectList.selectedIndex].value;
                 console.log(value);
-                var txt = selectList.options[selectList.selectedIndex].text;
-                console.log(txt);
-                }
+                fetch('/airlines/' + value +'/fleet/')
+                    .then((response) => {
+                    return response.json();
+                    })
+                    .then((data) => {
+                    console.log(data);
+                    })
+                };
         </script>
     </td>
     </tr>
@@ -80,7 +85,7 @@
     <footer class="site-footer">
         <span id="timestamp">Airlines List updated on </span>
         <script>
-        fetch('/airlines/timestamp/')
+        fetch('/airlines/timestamp')
                 .then((response) => {
                 return response.json();
                 })
