@@ -18,7 +18,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 @app.get('/', response_class=HTMLResponse)
 def homepage():
     """Method returns main HTML file with all corresponding frontend logic"""
-    with open(os.path.join(os.getcwd(), 'templates/result-API.html')) as fh:
+    with open(os.path.join(os.getcwd(), 'templates/index.html')) as fh:
         data = fh.read()
     return HTMLResponse(content=data, media_type="text/html")
 
