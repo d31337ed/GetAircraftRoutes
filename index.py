@@ -34,7 +34,7 @@ def get_airlines_list(q: str | None = None):
         filtered_airlines = []
         # Filtering loop:
         for airline in airlines_list:
-            # Conversion to upper case is made to make search registry independent
+            # Conversion to upper case is made to make search case non-sensitive
             if q.upper() in airline["text"].upper():
                 filtered_airlines.append(airline)
         # conversion of filtered list to format expected by Select2 Dropdown element
@@ -67,18 +67,15 @@ async def get_aircrafts_regs(airline_code: str, aircraft_code: str):
 
 
 @app.get('/airlines/{airline_code}/fleet/{aircraft_code}/routes/')
-# Разве мы не должны передавать в этот метод список самолётов?
-async def get_routes(airline_code: str, aircraft_code: str):
-    """Method returns list of routes for given list of aircraft"""
-    # А зачем? Разве мы не должны получать на вход именно список самолётов??
+async def get_regs_routes_link(airline_code: str, aircraft_code: str):
+    """Method returns the final result: list of routes, list of reg. numbers and GCMap Link"""
     planes = get_regs(airline_code, aircraft_code)
-    print(planes)
     # constructing list of lists of routes
     total_routes = []
     for aircraft in planes:
         total_routes.append(get_history(aircraft))
-    total_routes = set(reduce(operator.iconcat, total_routes, []))  # list of unique routes among all aircrafts
-    # Может, вынести генерацию  ссылки в отдельный метод?
+    total_routes = list(set(reduce(operator.iconcat, total_routes, []))) # list of unique routes among all aircrafts
     link = "http://www.gcmap.com/mapui?P=" + ','.join(total_routes)  # generating GCMap link
-    print(link)
-    return total_routes
+    # результат -- json с тремя подструктурами: routes, regs, link
+    result = {'planes': planes, 'routes': total_routes, 'link': link}
+    return result
