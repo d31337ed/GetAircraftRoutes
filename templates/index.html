@@ -53,16 +53,7 @@
 <div class="result" ><a id="link" hidden="true" href="{{GCMapLink}}" target="_blank" rel="noopener noreferrer">LinkText</a></div>
     <footer class="site-footer">
         <span id="timestamp">Airlines List updated on </span>
-        <script>
-        fetch('/airlines/timestamp')
-                .then((response) => {
-                return response.json();
-                })
-                .then((data) => {
-                console.log(data);
-                document.getElementById("timestamp").innerHTML = '  Airlines List updated on ' + data;
-                });
-        </script>
+        <script></script>
     </footer>
 </body>
 </html>
