@@ -17,89 +17,40 @@
     <td><label for="airline-selector" name="airline">Airline:</label></td>
     <td>
         <select id="airline-selector" class="airline-selector" style="width: 100%"></select>
-        <script type="text/javascript">
-            $('.airline-selector').select2({
-                ajax: {
-                url: '/airlines',
-                dataType: 'json'
-                }
-            });
-        </script>
+        <script src="js/list-fetcher.js" type="text/javascript"></script>
     </td>
     </tr>
     <tr>
     <td style="width: 100%;" colspan="2">
         <button type="submit" onclick="selectAirline()">Select Airline</button>
-        <script>
-            function selectAirline() {
-                let selectList = document.getElementById('airline-selector');
-                let value = selectList.options[selectList.selectedIndex].value;
-                fetch('/airlines/' + value +'/fleet/')
-                    .then((response) => {
-                    return response.json();
-                    })
-                    .then((data) => {
-                    for (let i = 0; i < data.length; i++) {
-                        let newButton = document.createElement("button");
-                        newButton.classList.add("planeButton")
-                        newButton.setAttribute("id", data[i])
-                        let buttonText = document.createTextNode(data[i]);
-                        newButton.appendChild(buttonText);
-                        document.getElementById("aircraft-types").appendChild(newButton);
-                        newButton.addEventListener('click', function(){
-                        let chosen_aircraft = this.innerText;
-                        document.getElementById('aircraft').value=chosen_aircraft;
-                        })
-                    }
-                });
-                };
-        </script>
+        <script src="js/select-button-processing.js"></script>
     </td>
     </tr>
    <tr>
         <td style="width: 100%;" colspan="2">
-            <h2>Step 2. Choose an aircraft from list:</h2>
-            <span id="aircraft-types">
+            <h2 id="header-step-2" hidden="true">Step 2. Choose an aircraft from list:</h2>
+            <span id="aircraft-types" hidden="true">
             </span>
         </td>
     </tr>
-    <td><label for="aircraft">Aircraft Type: </label></td>
-    <td><input type="text" id="aircraft" name="aircraft_type" placeholder="Select Aircraft from list above"></td>
+    <td><label id="label-step-2" hidden="true" for="aircraft">Aircraft Type: </label></td>
+    <td><input type="text" id="aircraft" name="aircraft_type" hidden="true" placeholder="Select Aircraft from list above"></td>
     </tr>
     <tr>
     <td style="width: 100%;" colspan="2">
-        <button type="submit" onclick="fetchRoutes()">Get Routes</button>
-        <script>
-            function fetchRoutes() {
-            let aircraftType = document.getElementById('aircraft').value
-            let selectList = document.getElementById('airline-selector');
-            let airlineCode = selectList.options[selectList.selectedIndex].value;
-            fetch('/airlines/' + airlineCode + '/fleet/' + aircraftType + '/routes/')
-            .then((response) => {
-                return response.json();
-                })
-                .then((data) => {
-                console.log(data);
-                let result = JSON.parse(JSON.stringify(data))
-                console.log(result["routes"])
-                document.getElementById("aircraftList").innerHTML = result["planes"];
-                document.getElementById("routesList").innerHTML = result["routes"];
-                document.getElementById("link").href = result["link"];
-                });
-            };
-        </script>
+        <button id="button-step-2" hidden="true" type="submit" onclick="fetchRoutes()">Get Routes</button>
+        <script src="js/get-routes-button-processing.js"></script>
     </td>
     </tr>
     </tbody>
     </table>
-
-<h2>Step 3. Enjoy the result:</h2>
-<h3>Planes: </h3>
-<div class="result" id="aircraftList"></div>
-<h3>Routes operated by {{chosen_airline}} on {{chosen_aircraft}} last week:</h3>
-<div class="result" id="routesList"></div>
-<h3>Map Link for routes operated last week on {{chosen_aircraft}} by {{chosen_airline}}:</h3>
-<div class="result"><a id="link" href="{{GCMapLink}}" target="_blank" rel="noopener noreferrer">LinkText</a></div>
+<h2 id="header-step-3" hidden="true">Step 3. Enjoy the result:</h2>
+<h3 id="header-step-3-1" hidden="true">Planes: </h3>
+<div class="result" id="aircraftList" hidden="true"></div>
+<h3 id="header-step-3-2" hidden="true">Routes operated by {{chosen_airline}} on {{chosen_aircraft}} last week:</h3>
+<div class="result" id="routesList" hidden="true"></div>
+<h3 id="header-step-3-3" hidden="true">Map Link for routes operated last week on {{chosen_aircraft}} by {{chosen_airline}}:</h3>
+<div class="result" ><a id="link" hidden="true" href="{{GCMapLink}}" target="_blank" rel="noopener noreferrer">LinkText</a></div>
     <footer class="site-footer">
         <span id="timestamp">Airlines List updated on </span>
         <script>

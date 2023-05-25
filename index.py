@@ -13,6 +13,7 @@ from fastapi.staticfiles import StaticFiles
 
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/js", StaticFiles(directory="js"), name="js")
 
 
 @app.get('/', response_class=HTMLResponse)
