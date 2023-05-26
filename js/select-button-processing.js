@@ -11,6 +11,7 @@
                     return response.json();
                     })
                     .then((data) => {
+                    document.getElementById("aircraft-types").innerHTML="";
                     for (let i = 0; i < data.length; i++) {
                         let newButton = document.createElement("button");
                         newButton.classList.add("planeButton")

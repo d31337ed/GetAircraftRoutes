@@ -24,18 +24,20 @@ h1 {
 
 h2 {
     font-family: "Helvetica Neue", serif; size: 5em;
-    color: #FFFAFA
+    color: #FFFAFA;
+    margin: 7px;
 }
 
 h3 {
     font-family: "Helvetica Neue", serif; size: 4em;
-    color: #FFFAFA
+    color: #FFFAFA;
+    margin: 5px;
 }
 
 input {
     border: 3px solid #555;
     height: 3em;
-    width: 99%;
+    width: 98%;
 }
 
 select {
@@ -58,6 +60,10 @@ label {
 
 .placeholder {
     font-size:2em;
+}
+
+.aircraft-types{
+    width:95%
 }
 
 button {
