@@ -1,4 +1,12 @@
 function fetchRoutes() {
+            document.getElementById('loading-spinner').hidden = false;
+            document.getElementById("header-step-3").hidden = true;
+            document.getElementById("header-step-3-1").hidden = true;
+            document.getElementById("header-step-3-2").hidden = true;
+            document.getElementById("header-step-3-3").hidden = true;
+            document.getElementById("aircraftList").hidden = true;
+            document.getElementById("routesList").hidden = true;
+            document.getElementById("link").hidden = true;
             let aircraftType = document.getElementById('aircraft').value
             let selectList = document.getElementById('airline-selector');
             let airlineCode = selectList.options[selectList.selectedIndex].value;
@@ -18,6 +26,7 @@ function fetchRoutes() {
                 document.getElementById("aircraftList").innerHTML = result["planes"];
                 document.getElementById("routesList").innerHTML = result["routes"];
                 document.getElementById("link").href = result["link"];
+                document.getElementById('loading-spinner').hidden = true;
                 document.getElementById("header-step-3").hidden = false;
                 document.getElementById("header-step-3-1").hidden = false;
                 document.getElementById("header-step-3-2").hidden = false;

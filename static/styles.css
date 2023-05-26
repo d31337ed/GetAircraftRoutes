@@ -66,6 +66,10 @@ label {
     width:95%
 }
 
+a {
+    color: #dbcf72;
+}
+
 button {
     width: 100%;
     align: center;
