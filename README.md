@@ -11,9 +11,9 @@ https://airoutes.de1337ed.ru/
 
 ## 🛠 Tech Stack
 
-**Back:** Python 3.9, Flask, requests, bs4
+**Back:** Python 3.9, FastAPI, requests, bs4
 
-**Client:** HTML5, CSS, JS
+**Client:** HTML5, CSS, JS, Select2
 
 
 
@@ -40,26 +40,21 @@ Clone the project
   cd GetAircraftRoutes
 ```
 
-- Run the app
+- Run the web-server
 
 ```bash
-  >python3 index.py
+  > uvicorn index:app  
 ```
 
-- Open the client 
+- Open the client in browser
 
 ```bash
-  localhost:5000
+  http://localhost:8000
 ```
-   (default flask port, change if necessary)
 
 ## 🛣 Roadmap
 
 - Catch exeptions after temporarily ban by flightradar. Add adaptive time-out for outcome requests. 
-
-- Cache list of airlines in local storage and occasionaly update it by schedule
-
-- Add text filtering in airline selector
 
 - Fix Aircraft Types buttons shifts 
 
