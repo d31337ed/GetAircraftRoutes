@@ -10,3 +10,5 @@
 /venv/
 Procfile
 runtime.txt
+.DS_Store
+*.pyc
