@@ -1,5 +1,6 @@
             function selectAirline() {
                 document.getElementById("aircraft-types").innerHTML="";
+                document.getElementById("aircraft").innerHTML="";
                 document.getElementById('progress-bar').hidden = false;
                 let selectList = document.getElementById('airline-selector');
                 let value = selectList.options[selectList.selectedIndex].value;
