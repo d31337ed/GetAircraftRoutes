@@ -1,4 +1,5 @@
             function selectAirline() {
+                document.getElementById("aircraft-types").innerHTML="";
                 document.getElementById('progress-bar').hidden = false;
                 let selectList = document.getElementById('airline-selector');
                 let value = selectList.options[selectList.selectedIndex].value;
@@ -7,7 +8,6 @@
                     return response.json();
                     })
                     .then((data) => {
-                    document.getElementById("aircraft-types").innerHTML="";
                     document.getElementById('progress-bar').hidden = true;
                     document.getElementById("header-step-2").hidden = false;
                     document.getElementById("label-step-2").hidden = false;

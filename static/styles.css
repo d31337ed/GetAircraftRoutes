@@ -63,8 +63,9 @@ label {
 }
 
 .aircraft-types{
-    width:95%
+    display:inline-flex;
 }
+
 
 a {
     color: #dbcf72;
