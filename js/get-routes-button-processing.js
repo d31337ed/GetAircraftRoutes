@@ -1,38 +1,45 @@
 function fetchRoutes() {
-            document.getElementById('loading-spinner').hidden = false;
-            document.getElementById("header-step-3").hidden = true;
-            document.getElementById("header-step-3-1").hidden = true;
-            document.getElementById("header-step-3-2").hidden = true;
-            document.getElementById("header-step-3-3").hidden = true;
-            document.getElementById("aircraftList").hidden = true;
-            document.getElementById("routesList").hidden = true;
-            document.getElementById("link").hidden = true;
-            let aircraftType = document.getElementById('aircraft').value
-            let selectList = document.getElementById('airline-selector');
-            let airlineCode = selectList.options[selectList.selectedIndex].value;
-            fetch('/airlines/' + airlineCode + '/fleet/' + aircraftType + '/routes/')
-            .then((response) => {
-                return response.json();
-                })
-                .then((data) => {
-                console.log(data);
-                let result = JSON.parse(JSON.stringify(data))
-                console.log(result["routes"])
-                let selectList = document.getElementById('airline-selector');
-                let airline = selectList.options[selectList.selectedIndex].innerText;
-                let aircraft = document.getElementById('aircraft').value;
-                document.getElementById('header-step-3-2').innerText = 'Routes operated by ' + airline + ' on ' + aircraft + ' last week:';
-                document.getElementById('header-step-3-3').innerText = 'Map Link for routes operated last week on ' + aircraft + ' by ' + airline;
-                document.getElementById("aircraftList").innerHTML = result["planes"];
-                document.getElementById("routesList").innerHTML = result["routes"];
-                document.getElementById("link").href = result["link"];
-                document.getElementById('loading-spinner').hidden = true;
-                document.getElementById("header-step-3").hidden = false;
-                document.getElementById("header-step-3-1").hidden = false;
-                document.getElementById("header-step-3-2").hidden = false;
-                document.getElementById("header-step-3-3").hidden = false;
-                document.getElementById("aircraftList").hidden = false;
-                document.getElementById("routesList").hidden = false;
-                document.getElementById("link").hidden = false;
-                });
-            };
+    const link = document.getElementById('link');
+    const routesList = document.getElementById('routesList');
+    const aircraftList = document.getElementById('aircraftList');
+    const spinner = document.getElementById('loading-spinner');
+    const headerStep = document.getElementById('header-step-3');
+    const headerStep1 = document.getElementById('header-step-3-1');
+    const headerStep2 = document.getElementById('header-step-3-2');
+    const headerStep3 = document.getElementById('header-step-3-3');
+
+    spinner.hidden = false;
+    headerStep.hidden = true;
+    headerStep1.hidden = true;
+    headerStep2.hidden = true;
+    headerStep3.hidden = true;
+    aircraftList.hidden = true;
+    routesList.hidden = true;
+    link.hidden = true;
+
+    const aircraftType = document.getElementById('aircraft').value
+    const selectList = document.getElementById('airline-selector');
+    const airlineCode = selectList.options[selectList.selectedIndex].value;
+
+    fetch(`/airlines/${airlineCode}/fleet/${aircraftType}/routes/`)
+        .then((response) => response.json())
+        .then((data) => {
+            const airline = selectList.options[selectList.selectedIndex].innerText;
+
+            headerStep2.innerText = `Routes operated by ${airline} on ${aircraftType} last week:`;
+            headerStep3.innerText = `Map Link for routes operated last week on ${aircraftType} by ${airline}`;
+            aircraftList.textContent = data['planes'];
+            routesList.textContent = data['routes'];
+            link.href = data['link'];
+
+            spinner.hidden = true;
+            headerStep.hidden = false;
+            headerStep1.hidden = false;
+            headerStep2.hidden = false;
+            headerStep3.hidden = false;
+            aircraftList.hidden = false;
+            routesList.hidden = false;
+            link.hidden = false;
+        })
+        .catch((error) => console.error(error))
+}

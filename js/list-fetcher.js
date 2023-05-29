@@ -1,6 +1,6 @@
-$('.airline-selector').select2({
+$('#airline-selector').select2({
     ajax: {
-    url: '/airlines',
-    dataType: 'json'
+        url: '/airlines',
+        dataType: 'json'
     }
 });
