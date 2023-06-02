@@ -17,19 +17,18 @@ body {
 
 h1 {
     font-family: "Helvetica Neue", serif;
-    size: 7em;
     color: #FFFAFA;
     text-align: center;
 }
 
 h2 {
-    font-family: "Helvetica Neue", serif; size: 5em;
+    font-family: "Helvetica Neue", serif;
     color: #FFFAFA;
     margin: 7px;
 }
 
 h3 {
-    font-family: "Helvetica Neue", serif; size: 4em;
+    font-family: "Helvetica Neue", serif;
     color: #FFFAFA;
     margin: 5px;
 }
@@ -47,42 +46,55 @@ select {
 }
 
 input:focus {
-  border: 3px solid #FFFAAA;
+    border: 3px solid #FFFAAA;
 }
 
 label {
-    font-family: "Helvetica Neue", serif; font-size: 1.5em; color: #FFFAFA
+    font-family: "Helvetica Neue", serif;
+    font-size: 1.5em;
+    color: #FFFAFA
 }
 
 #result {
-    font-family: "Helvetica Neue", serif; font-color: #FFFAFA
+    font-family: "Helvetica Neue", serif;
+    color: #FFFAFA
+}
+
+#progress-bar {
+    margin-inline: auto;
 }
 
 .placeholder {
-    font-size:2em;
+    font-size: 2em;
 }
 
-.aircraft-types{
-    display:inline-flex;
+.aircraft-types {
+    display: inline-flex;
 }
-
 
 a {
     color: #dbcf72;
 }
 
+.select2-container {
+    width: 100% !important;
+}
+
 button {
     width: 100%;
-    align: center;
     background-color: #dbcf72;
     height: 3em;
     border-radius: 6px;
     font-weight: bold;
+    cursor: pointer;
 }
 
+.result__button {
+    font-size: 1.3em;
+    margin-left: 10%;
+}
 
 .planeButton {
-    align: center;
     background-color: #12dec6;
     height: 2em;
     border-radius: 15px;
@@ -92,15 +104,15 @@ button {
     width: 100%;
 }
 
-table{
-    width:100%;
+table {
+    width: 100%;
 }
 
-table td{
+table td {
     white-space: nowrap;
 }
 
-table td:last-child{
+table td:last-child {
     width: 100%;
 }
 
@@ -112,9 +124,16 @@ table td:last-child{
     background-color: #FFFAFA;
 }
 
+#loading-spinner {
+    width: 10%;
+    height: 10%;
+    margin: auto;
+}
+
 .timestamp {
-    font-family: "Helvetica Neue", serif; font-size: 0.9em;
+    font-family: "Helvetica Neue", serif;
+    font-size: 0.9em;
+    margin-left: 5%;
     padding-left: 5px;
     vertical-align: middle;
 }
-
