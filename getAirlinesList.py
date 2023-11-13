@@ -24,5 +24,6 @@ def get_airlines():
     with open('airlines.json', 'w') as file:
         file.write('{"results": ' + json.dumps(select_list) + '}')
 
-
-print(get_airlines())
+if __name__ == '__main__':
+    get_airlines()
+    print(get_airlines())
