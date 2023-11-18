@@ -20,12 +20,12 @@ def get_history(aircraft: str) -> list:
             raw_from_data = routes_soup.find_all('label', text=key)
             destinations = []
             for route in raw_from_data:
-                fromTag = route.parent
-                fromAirport = fromTag.findChild('a')
-                if fromAirport is None:
+                from_tag = route.parent
+                from_airport = from_tag.findChild('a')
+                if from_airport is None:
                     destinations.append('-')
                 else:
-                    destinations.append(fromAirport.text[1:-2])
+                    destinations.append(from_airport.text[1:-2])
             return destinations
         else:
             raise ValueError
@@ -33,10 +33,10 @@ def get_history(aircraft: str) -> list:
     froms = get_destinations('FROM')
     tos = get_destinations('TO')
 
-    routes = [x + '-' + y for x, y in zip(froms, tos)]   # uniting destinations into routes ("FROM, "TO" -> "FROM-TO")
+    routes = [x + '-' + y for x, y in zip(froms, tos)]   # uniting destinations into routes ("FROM", "TO" -> "FROM-TO")
     routes = list(map(lambda s: s.strip("--"), routes))  # removing empty and semi-empty routes
     routes[:] = [x for x in routes if x]                 # cleaning empty elements from list
 
-    time.sleep(random.randrange(3, 8)/10)
+    time.sleep(random.randrange(3, 8)/10)                # awaiting some time to prevent banning by FR server
 
     return routes

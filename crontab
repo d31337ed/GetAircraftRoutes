@@ -1,1 +1,3 @@
-*/20 /4* * * * python3 /getAirlinesList.py >> /logfile
+PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+_=/usr/bin/env
+20 4 * * * cd /routes-app && python3 /routes-app/getAirlinesList.py
