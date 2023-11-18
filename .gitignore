@@ -11,4 +11,5 @@
 /venv/
 Procfile
 runtime.txt
+anton.xml
 __pycache__/
