@@ -12,4 +12,5 @@
 Procfile
 runtime.txt
 anton.xml
+/logs/
 __pycache__/

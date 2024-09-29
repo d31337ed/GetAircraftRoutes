@@ -21,7 +21,7 @@ def get_airlines():
         codes.append(current_code)
         select_list.append({"id": current_code, "text": current_title})
 
-    with open('airlines.json', 'w') as file:
+    with open('/routes-app/airlines.json', 'w') as file:
         file.write('{"results": ' + json.dumps(select_list) + '}')
 
 
